@@ -1,0 +1,183 @@
+body {
+	background: #000;
+} 
+
+/* fonts */ 
+
+@font-face {
+	src: url('./MinionPro-Regular.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+}
+
+#nav a {
+	font-family: helvetica;
+	color: #878d3f;
+	text-decoration: none;
+
+}
+
+
+a {
+	color: #878d3f;
+}
+
+
+span a {
+	color: #000;
+	text-decoration: none;
+}
+
+.quote {
+	font-style: italic !important;
+}
+
+h1 {
+	font-family: helvetica;
+	color: #878d3f;
+	font-weight: 200;
+	font-size: 1.5vw;
+}
+
+
+h2 {
+	font-family: helvetica;
+	color: #878d3f;
+	font-weight: 200;
+	font-size: 1.5vw;
+	float: left;
+	margin-right: 25px;
+}
+
+/* menu */
+
+#nav {
+	position: fixed;
+	width: 100%;
+}
+
+form {
+	float: right;
+} 
+
+input[type="text"] {
+ 	font-size: 1.5vw;
+  	font-family: helvetica;
+  	background: transparent;
+  	color: #878d3f;
+  	border-block-color: #878d3f;
+  	border: 0px;
+  	font-weight: 200;
+  	padding-top: 15px;
+  	opacity: 1;
+}
+
+input[type="submit"] {
+	display: none;
+}
+
+
+/* boxes */ 
+
+#hello {
+	text-align: center;
+	margin: auto;
+	padding-top: 25%;
+}
+
+#about {
+	margin: auto;
+	padding-top: 25%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 15%;
+}
+
+#start {
+	margin: auto;
+	padding-top: 25%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#topics {
+	margin: auto;
+	padding-top: 25%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 15%;
+}
+
+#category {
+	margin-top: 25%;
+}
+
+/* grid */
+
+.grid-container {
+	font-family: helvetica;
+	color: #878d3f;
+	font-weight: 200;
+	font-size: 1.5vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 25%;
+	padding-bottom: 250px;
+	text-align: center;
+}
+
+.grid-container-start {
+	font-family: helvetica;
+	color: #878d3f;
+	font-weight: 200;
+	font-size: 1.5vw;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 5%;
+	padding-bottom: 250px;
+	text-align: center;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.expanded {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: none;
+    position: absolute;
+    background-color: #000;
+    max-width: 1800px;
+    padding-right: 200px;
+    margin-left: -20%;
+   text-align: left;
+   padding-bottom: 75px;
+}
+
+
+/* tags */
+
+span.tag {
+	color:  #000;
+	background-color: #878d3f;
+	border: 1px solid;
+	border-radius: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 1.25vw;
+}
+
+.expanded {
+			max-height: 500px;
+	        overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+}
