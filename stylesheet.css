@@ -38,6 +38,7 @@ h1 {
 	color: #878d3f;
 	font-weight: 200;
 	font-size: 1.5vw;
+	line-height: 2vw;
 }
 
 
@@ -176,6 +177,7 @@ span.tag {
 	padding-left: 4px;
 	padding-right: 4px;
 	font-size: 1.25vw;
+	line-height: 2vw;
 }
 
 .expanded {
