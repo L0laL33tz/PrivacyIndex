@@ -155,10 +155,12 @@ input[type="submit"] {
     position: absolute;
     background-color: #000;
     max-width: 1800px;
-    padding-right: 200px;
-    margin-left: -20%;
+    padding-right: 150px;
+    margin-left: -25%;
    text-align: left;
    padding-bottom: 75px;
+   padding-left: 75px;
+   margin-top: 25px;
 }
 
 
