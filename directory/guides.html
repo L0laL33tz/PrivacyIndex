@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<title>BTC PRIVACY</title>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<h2><a href="../home.html">PrivacyIndex</a></h2>
+			<h2><a href="../about.html">About</a></h2>
+			<h2><a href="../start.html">Threats</a></h2>
+			<h2><a href="../start.html">Tools</a></h2>
+			<h2><a href="../topics.html">Topics</a></h2>
+		<form action="/search" method="GET">
+      		<input type="text" name="q" placeholder="Search...">
+       		<input type="submit" value="Search">
+  		</form>
+		</ul>
+	</div>
+	<div id="hello">
+		<h1>GUIDES
+		</h1>
+	</div>
+ <div class="grid-container">
+    <div class="grid-item">Opsec 101</div>
+        <div class="grid-item" onclick="expandText(this)">Opsec 101          
+            <div class="expanded"><p>This guide covers the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. As this is intended for all audiences, it will be rich in easily destroyable strawmen examples that do not necessarily reflect complex realistic threats and risks.</p><p>This guide is not a "how to be anonymous on the internet", "how to protect yourself online", or "best practices" guide. Those are all countermeasure-first approaches that assume a threat model that applies to you (when it often doesn't). Instead, this guide teaches you how to understand that for yourself through the opsec process. While many guides can be useful to learn about potential threats and countermeasures, the countermeasure-first approach of the "best practices" fallacy has no place in opsec and ultimately leads to baseless paranoia. </p><p>Read the guide <a href="https://opsec101.org/" target="_blank" rel="noopener noreferrer">here.</a></p>
+            </div>
+        </div>
+        <div class="grid-item">2023</div>
+       <div class="grid-item"><span class="tag"><a href="guides.html">guides</a></span><span class="tag"><a href="strategies">strategies</a></span><span class="tag"><a href="strategies">OPSEC</a></span></div>
+    <div class="grid-item">Bitcoin Wiki</div>
+        <div class="grid-item" onclick="expandText(this)">Privacy Best Practices
+            <div class="expanded"><p>While Bitcoin can support strong privacy, many ways of using it are usually not very private. With a proper understanding of the technology, bitcoin can indeed be used in a very private and anonymous way. As of 2019 most casual enthusiasts of bitcoin believe it is perfectly traceable; this is completely false. Around 2011 most casual enthusiasts believed it is totally private; which is also false. There is some nuance - in certain situations, bitcoin can be very private. But it is not simple to understand, and it takes some time and reading. </p><p>Read the full guide <a href="https://en.bitcoin.it/Privacy" target="_blank" rel="noopener noreferrer">here.</a></p>
+            </div>
+        </div>
+        <div class="grid-item">2019</div>
+       <div class="grid-item"><span class="tag"><a href="guides.html">guides</a></span><span class="tag"><a href="bitcoin">bitcoin</a></span><span class="tag"><a href="strategies">strategies</a></span></div>
+        <div class="grid-item">EFF</div>
+        <div class="grid-item" onclick="expandText(this)">Surveillance Self-Defense         
+            <div class="expanded"><p>Surveillance Self-Defense is a digital security guide that teaches you how to assess your personal risk from online spying. It can help protect you from surveillance by those who might want to find out your secrets, from petty criminals to nation states. We offer guides to the best privacy-enhancing tools and explain how to incorporate protecting yourself against surveillance into your daily routine. </p><p>This guide will teach you how to make a security plan for your digital information and how to determine what solutions are best for you. </p><p>Read the guide <a href="https://ssd.eff.org/" target="_blank" rel="noopener noreferrer">here.</a></p>
+            </div>
+        </div>
+        <div class="grid-item">2023</div>
+       <div class="grid-item"><span class="tag"><a href="guides.html">guides</a></span><span class="tag"><a href="strategies">strategies</a></span></div>
+       <div class="grid-item">MITRE</div>
+        <div class="grid-item" onclick="expandText(this)">MITRE ATT&CK          
+            <div class="expanded"><p>The MITRE ATT&CK® framework is a knowledge base containing information about the various ways in which a cyberattacker can achieve certain goals. It is organized based on the cyberattack life cycle and details methods of achieving different goals that advance an attacker’s interests.</p><p>The ATT&CK framework was created and is maintained by MITRE. MITRE is a federally funded research and development center (FFRDC) of the US government with research interests that include cybersecurity. The MITRE ATT&CK framework was created to standardize cybersecurity vocabulary and increase awareness of cybersecurity threats and attack vectors. </p><p>Learn more <a href="https://resources.infosecinstitute.com/topics/mitre-attck/the-ultimate-guide-to-the-mitre-attck-framework/" target="_blank" rel="noopener noreferrer">here.</a></p>
+            </div>
+        </div>
+        <div class="grid-item">2023</div>
+       <div class="grid-item"><span class="tag"><a href="guides.html">guides</a></span><span class="tag"><a href="strategies">strategies</a></span></div>
+
+    </div>
+
+    <script>
+        function expandText(element) {
+            var expandedText = element.querySelector(".expanded");
+            if (window.getComputedStyle(expandedText).display === "none") {
+                expandedText.style.display = "block";
+            } else {
+                expandedText.style.display = "none";
+            }
+        }
+    </script>
+
+</html>
