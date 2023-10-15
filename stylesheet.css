@@ -60,6 +60,7 @@ h2 {
 
 form {
 	float: right;
+	display: none;
 } 
 
 input[type="text"] {
