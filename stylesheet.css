@@ -186,3 +186,27 @@ span.tag {
 	        overflow: hidden;
             transition: max-height 0.5s ease-in-out;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 2.5vw;
+		line-height: 3vw;
+	}
+
+	h2 {
+		font-size: 2.5vw;
+		line-height: 3vw;
+	}
+
+	span.tag {
+		font-size: 1.75vw;
+		line-height: 2.5vw;
+	}
+
+	.grid-container {
+		font-size: 2.5vw;
+		line-height: 3vw;
+	}
+}
