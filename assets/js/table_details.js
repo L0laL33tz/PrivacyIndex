@@ -35,5 +35,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  const tagAnchors = document.querySelectorAll('tr a.tag');
+
+  // Process each anchor tag
+  tagAnchors.forEach(function(anchor) {
+    anchor.addEventListener("click", function(event) {
+      // do not bubble the click event up to the parent table row
+      event.stopPropagation();
+    });
+  });
+
+
 
 });
