@@ -19,11 +19,13 @@ Jekyll::Hooks.register :site, :after_init do |site|
     Dir.mkdir(tags_path)
 
     tags.each do |tag|
-      path = File.join( tags_path, "#{Addressable::URI.encode(tag.downcase)}.md")
+      hashedTag = Digest::SHA256.hexdigest(tag.downcase)[0..6];
+      path = File.join( tags_path, "#{hashedTag}.md")
+      #path = File.join( tags_path, "#{Addressable::URI.encode(tag.downcase)}.md")
       print("\t - #{tag} in #{path}\n")
 
       File.open(path, "wb") do |file|
-        file << "---\nlayout: articles_by_tag\ntitle: #{tag.capitalize}\ntag-name: #{tag}\n---\n\n{% include auto_tag_glossary.liquid %}\n"
+        file << "---\nlayout: articles_by_tag\ntitle: #{tag.capitalize}\ntag-name: #{tag}\nauto-links-id: #{hashedTag}\n---\n\n{% include auto_tag_glossary.liquid %}\n"
       end
     end
 
