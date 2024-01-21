@@ -17,7 +17,7 @@ Jekyll::Hooks.register :site, :after_init do |site|
     Dir.mkdir(glossary_path)
 
     glossary_data.each do |definition|
-      path = File.join( glossary_path, "#{Addressable::URI.encode(definition['title'])}.md")
+      path = File.join( glossary_path, "#{Addressable::URI.encode(definition['title'].downcase)}.md")
       print("\t - #{definition['title']} in #{path}\n")
 
       File.open(path, "wb") do |file|
