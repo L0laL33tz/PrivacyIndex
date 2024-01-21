@@ -19,7 +19,7 @@ Jekyll::Hooks.register :site, :after_init do |site|
     Dir.mkdir(tags_path)
 
     tags.each do |tag|
-      path = File.join( tags_path, "#{Addressable::URI.encode(tag)}.md")
+      path = File.join( tags_path, "#{Addressable::URI.encode(tag.downcase)}.md")
       print("\t - #{tag} in #{path}\n")
 
       File.open(path, "wb") do |file|
