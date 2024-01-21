@@ -1,3 +1,5 @@
+---
+---
 document.addEventListener("DOMContentLoaded", function() {
 
   const linkerFunction = function(type) {
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const escapedTypeText = encodeURIComponent(encodeURIComponent(typeText).toLowerCase());
 
       // Construct the href attribute based on the escaped type
-      anchor.href = `/${type}/` + escapedTypeText;
+      anchor.href = `{{ site.baseurl }}/${type}/` + escapedTypeText;
 
       // Add the 'typeText' class to the anchor
       anchor.className = type;
