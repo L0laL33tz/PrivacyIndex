@@ -1,0 +1,62 @@
+---
+layout: base
+---
+
+<div class="snippets">
+  {% if page.tag-name %}
+    <h1 class="snippets-heading">Topic: {{ page.tag-name }}</h1>
+  {% endif %}
+  {{ content }}
+  <table>
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Tags</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in site.data.articles %}
+    {% if page.tag-name == nil or page.tag-name == "" or  item.tags contains page.tag-name %}
+    <tr class="data-row" data-entry-id="{{forloop.index}}">
+      <td>{{ item.authors | join: ', ' }}</td>
+      <td>{{ item.date }}</td>
+      <td>
+        <div class="detail-box-header" data-entry-id="{{forloop.index}}">
+          {{ item.title }}
+        </div>
+      </td>
+      <td>
+        {% for tag in item.tags %}
+        <a data-type="tag">{{ tag }}</a>
+        {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+
+  {% for item in site.data.articles %}
+  {% if page.tag-name == nil or page.tag-name == "" or item.tags contains page.tag-name %}
+  <div class="detail-box-content-wrapper detail-box-content-wrapper-hidden" data-entry-id="{{forloop.index}}">
+    <div class="detail-box-content" data-entry-id="{{forloop.index}}">
+      <div>
+        <h3>{{ item.title }}</h3>
+        {{ item.description }}
+      </div>
+      {% if item.url %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Read more</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+
+</div>
+
+<script src="{{ '/assets/js/table_details.js' | relative_url }}"></script>
+

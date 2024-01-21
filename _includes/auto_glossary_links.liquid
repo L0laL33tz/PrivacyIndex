@@ -1,0 +1,50 @@
+{% assign content_with_links = include.content %}
+
+{% assign tags = site.tag | map: 'title' %}
+
+{% if page.auto-links-use-tags %}
+    {% for tag in tags %}
+        {% assign title = tag %}
+
+        {% capture link_markup %}<a data-type="tag" class="tag">{{ title }}</a>{% endcapture %}
+        {% assign content_with_links = content_with_links | replace: title, link_markup %}
+
+        {% assign title = tag | capitalize %}
+
+        {% capture link_markup %}<a data-type="tag" class="tag">{{ title }}</a>{% endcapture %}
+        {% assign content_with_links = content_with_links | replace: title, link_markup %}
+
+        {% assign title = tag | downcase %}
+
+        {% capture link_markup %}<a data-type="tag" class="tag">{{ title }}</a>{% endcapture %}
+        {% assign content_with_links = content_with_links | replace: title, link_markup %}
+    {% endfor %}
+{% endif %}
+
+{% for item in site.data.glossary %}
+    {% if item.title != include.title %}
+        {% assign title = item.title %}
+
+        {% unless tags contains title %}
+            {% capture link_markup %}<a data-type="glossary" class="glossary">{{ title }}</a>{% endcapture %}
+            {% assign content_with_links = content_with_links | replace: title, link_markup %}
+        {% endunless %}
+
+        {% assign title = item.title | capitalize %}
+
+        {% unless tags contains title %}
+            {% capture link_markup %}<a data-type="glossary" class="glossary">{{ title }}</a>{% endcapture %}
+            {% assign content_with_links = content_with_links | replace: title, link_markup %}
+        {% endunless %}
+
+        {% assign title = item.title | downcase %}
+
+        {% unless tags contains title %}
+            {% capture link_markup %}<a data-type="glossary" class="glossary">{{ title }}</a>{% endcapture %}
+            {% assign content_with_links = content_with_links | replace: title, link_markup %}
+        {% endunless %}
+
+    {% endif %}
+{% endfor %}
+
+{{ content_with_links }}
