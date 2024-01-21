@@ -5,3 +5,4 @@ _site
 .tweet-cache
 .vscode
 *.code-workspace
+Gemfile.lock
