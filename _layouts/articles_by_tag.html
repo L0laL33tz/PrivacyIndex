@@ -29,7 +29,9 @@ layout: base
       </td>
       <td>
         {% for tag in item.tags %}
-        <a data-type="tag">{{ tag }}</a>
+        {% assign tag_from_collection = site.tag | where: "tag-name", tag | first %}
+        {% assign href = site.baseurl | append: "/tag/" | append: tag_from_collection.auto-links-id %}
+        <a href={{ href }} class="tag">{{ tag }}</a>
         {% unless forloop.last %}, {% endunless %}
         {% endfor %}
       </td>

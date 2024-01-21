@@ -4,8 +4,10 @@ title: Glossary
 permalink: /glossary/
 ---
 
-{% assign sorted_items = site.data.glossary | map: 'title' | uniq | sort %}
+{% assign sorted_items = site.glossary | sort: 'title' %}
 
 {% for item in sorted_items %}
-<a class="tag-link" data-type="glossary">{{ item }}</a>
+{% assign href = site.baseurl | append: "/glossary/" | append: item.auto-links-id %}
+
+<a class="glossary" href="{{ href }}">{{ item.title }}</a>
 {% endfor %}
