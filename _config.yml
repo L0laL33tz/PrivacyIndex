@@ -20,7 +20,6 @@ description: >
 plugins:
   - jekyll-seo-tag
   - jekyll-minifier
-  - jekyll-redirect-from
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
