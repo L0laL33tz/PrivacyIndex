@@ -15,8 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const entryId = dataRow.dataset.entryId;
     dataRow.addEventListener("click", function( event ) {
       clickHandler(entryId);
-      event.stopPropagation();
+      const dataRows = document.querySelectorAll(".row.row-meta");
+
     });
   });
 
+
+  // prevent the above handler from firing when clicking on a link
+  const tagAnchors = document.querySelectorAll(".row a");
+
+  tagAnchors.forEach(function(anchor) {
+    anchor.addEventListener("click", function( event ) {
+      event.stopPropagation();
+    });
+  });
 });
