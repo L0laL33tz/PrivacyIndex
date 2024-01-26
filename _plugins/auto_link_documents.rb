@@ -34,14 +34,10 @@ Jekyll::Hooks.register [:documents, :posts, :pages], :pre_render do |document|
     end
 
 
-    print "#{term_types}"
-
     existing_hyperlinks = {}
 
     # Replace existing hyperlinks with placeholders
     placeholder_counter = 0
-    print "document.data: #{document.data}\n"
-    # print "document.content: #{document.content}\n"
     document.content = document.content.gsub(/<a\b[^>]*>(.*?)<\/a>/i) do |match|
       placeholder = "HYPERLINK_PLACEHOLDER_#{placeholder_counter}"
       existing_hyperlinks[placeholder] = match

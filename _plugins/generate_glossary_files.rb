@@ -18,7 +18,6 @@ Jekyll::Hooks.register :site, :after_init do |site|
     glossary_data.each do |definition|
       hashedTitle = Digest::SHA256.hexdigest(definition['title'].downcase)[0..6];
       path = File.join( glossary_path, "#{hashedTitle}.md")
-      #path = File.join( glossary_path, "#{Addressable::URI.encode(definition['title'].downcase)}.md")
       print("\t - #{definition['title']} in #{path}\n")
 
       File.open(path, "wb") do |file|

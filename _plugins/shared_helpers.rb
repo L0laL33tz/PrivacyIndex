@@ -12,7 +12,6 @@ module SharedHelpers
     glossary_data = self.load_all_glossary_data(site)
     if glossary_data && glossary_data.size > 0
       terms = glossary_data.map { |data| data['title'] }.flatten.uniq.reject { |t| t.empty? }
-      print "Found #{terms.size} glossary terms #{terms}\n"
       return terms
     end
   end
