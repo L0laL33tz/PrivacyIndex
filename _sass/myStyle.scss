@@ -61,3 +61,14 @@ a.more {
   background-size: 10px;
   padding-right:14px;
 }
+
+/** hero **/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}

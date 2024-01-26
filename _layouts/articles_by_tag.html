@@ -5,7 +5,9 @@ layout: base
 <div class="snippets">
   {% assign filtered_articles = site.data.articles %}
   {% if page.tag-name %}
-    <h1 class="snippets-heading">Topic: {{ page.tag-name }}</h1>
+    <div class="hero">
+    <h1 class="snippets-heading">{{ page.tag-name | upcase }}</h1>
+    </div>
     {% assign filtered_articles = site.data.articles | where_exp:"article", "article.tags contains page.tag-name" %}
   {% endif %}
   {{ content }}

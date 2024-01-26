@@ -7,3 +7,7 @@
 #
 layout: articles_by_tag
 ---
+
+<div class="hero">
+<h1 class="snippets-heading">If you think you're viewing this page in private,<br>you're doing it wrong.</h1> 
+</div>
