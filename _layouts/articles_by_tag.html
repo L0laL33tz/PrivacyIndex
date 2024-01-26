@@ -3,60 +3,51 @@ layout: base
 ---
 
 <div class="snippets">
+  {% assign filtered_articles = site.data.articles %}
   {% if page.tag-name %}
     <h1 class="snippets-heading">Topic: {{ page.tag-name }}</h1>
+    {% assign filtered_articles = site.data.articles | where_exp:"article", "article.tags contains page.tag-name" %}
   {% endif %}
   {{ content }}
-  <table>
-    <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Description</th>
-      <th>Tags</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for item in site.data.articles %}
-    {% if page.tag-name == nil or page.tag-name == "" or  item.tags contains page.tag-name %}
-    <tr class="data-row" data-entry-id="{{forloop.index}}">
-      <td>{{ item.authors | join: ', ' }}</td>
-      <td>{{ item.date }}</td>
-      <td>
-        <div class="detail-box-header" data-entry-id="{{forloop.index}}">
-          {{ item.title }}
-        </div>
-      </td>
-      <td>
+
+  {% if filtered_articles.size > 0 %}
+  <section>
+    <header class="table-header">
+      <div class="col">Title</div>
+      <div class="col">Date</div>
+      <div class="col">Description</div>
+      <div class="col">Tags</div>
+    </header>
+    {% for item in filtered_articles %}
+    <div class="article-entry">
+      <div class="row row-meta" data-entry-id="{{forloop.index}}">
+        <div class="col">{{ item.authors | join: ', ' }}</div>
+        <div class="col">{{ item.date }}</div>
+        <div class="col">{{ item.title }}</div>
+        <div class="col">
         {% for tag in item.tags %}
         {% assign tag_from_collection = site.tag | where: "tag-name", tag | first %}
         {% assign href = site.baseurl | append: "/tag/" | append: tag_from_collection.auto-links-id %}
-        <a href={{ href }} class="tag">{{ tag }}</a>
-        {% unless forloop.last %}, {% endunless %}
+        <a href={{ href }} class="tag">{{ tag | replace: ' ', '&nbsp;' }}</a>{% unless forloop.last %} {% endunless %}
         {% endfor %}
-      </td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-    </tbody>
-  </table>
-
-  {% for item in site.data.articles %}
-  {% if page.tag-name == nil or page.tag-name == "" or item.tags contains page.tag-name %}
-  <div class="detail-box-content-wrapper detail-box-content-wrapper-hidden" data-entry-id="{{forloop.index}}">
-    <div class="detail-box-content" data-entry-id="{{forloop.index}}">
-      <div>
-        <h3>{{ item.title }}</h3>
-        {{ item.description }}
+        </div>
       </div>
-      {% if item.url %}
-      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Read more</a>
+      {% if item.description %}
+      <div class="row row-detail row-detail-hidden" data-entry-id="{{forloop.index}}">
+        <div class="col">
+          <div>
+          {{ item.description }}
+          </div>
+          {% if item.url %}
+          <a href="{{ item.url }}" target="_blank" class="more" rel="noopener noreferrer">Read more</a>
+          {% endif %}
+        </div>
+      </div>
       {% endif %}
     </div>
-  </div>
+    {% endfor %}
+  </section>
   {% endif %}
-  {% endfor %}
-
 
 </div>
 

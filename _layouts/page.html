@@ -6,11 +6,7 @@ layout: base
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
   <div class="post-content">
-    {% if page.auto-links %}
-    {% include auto_glossary_links.liquid content=content %}
-    {% else %}
     {{ content }}
-    {% endif %}
   </div>
 
 </article>

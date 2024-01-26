@@ -1,12 +1,10 @@
+require_relative 'shared_helpers'
+
 Jekyll::Hooks.register :site, :after_init do |site|
-  path = File.join(site.source, '_data', 'articles.yml')
+  tags = SharedHelpers.load_all_tags(site)
 
   # Check if the file exists
-  if File.exists?(path)
-    articles_data = YAML.safe_load(File.read(path), permitted_classes: [Date])
-
-    # extract the tags from every article in the articles_data
-    tags = articles_data.map { |article| article['tags'] }.flatten.uniq.reject { |t| t.empty? }
+  if tags && tags.size > 0
 
     tags_path = File.join(site.source, '_tag')
 

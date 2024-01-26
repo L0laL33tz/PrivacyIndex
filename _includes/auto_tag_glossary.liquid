@@ -8,7 +8,4 @@
     {% endif %}
 {% endfor %}
 
-{% if item_to_include %}
-    {% assign new_content = item_to_include.content %}
-    {% include auto_glossary_links.liquid content=new_content title='' %}
-{% endif %}
+{{item_to_include.content}}
