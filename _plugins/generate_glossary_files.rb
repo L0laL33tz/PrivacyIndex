@@ -1,11 +1,10 @@
+require_relative 'shared_helpers'
+
 Jekyll::Hooks.register :site, :after_init do |site|
 
-  path = File.join(site.source, '_data', 'glossary.yml')
+  glossary_data = SharedHelpers.load_all_glossary_data(site)
 
-  # Check if the file exists
-  if File.exists?(path)
-    glossary_data = YAML.safe_load(File.read(path), permitted_classes: [Date])
-
+  if glossary_data && glossary_data.length > 0
     glossary_path = File.join(site.source, '_glossary')
 
     if Dir.exist?(glossary_path)
@@ -23,7 +22,7 @@ Jekyll::Hooks.register :site, :after_init do |site|
       print("\t - #{definition['title']} in #{path}\n")
 
       File.open(path, "wb") do |file|
-        file << "---\nlayout: glossary\ntitle: #{definition['title']}\nauto-links-id: #{hashedTitle}\n---\n\n#{definition['content']}\n"
+        file << "---\nlayout: glossary\ntitle: #{definition['title']}\nauto-links-id: #{hashedTitle}\nauto-links: true\nauto-links-use-tags: true\n---\n\n#{definition['content']}\n"
       end
     end
 
@@ -33,3 +32,4 @@ Jekyll::Hooks.register :site, :after_init do |site|
 
 
 end
+
