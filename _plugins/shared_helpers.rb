@@ -2,7 +2,7 @@ module SharedHelpers
   def self.load_all_glossary_data(site)
     path = File.join(site.source, '_data', 'glossary.yml')
     # Check if the file exists
-    if File.exists?(path)
+    if File.exist?(path)
       glossary_data = YAML.safe_load(File.read(path), permitted_classes: [Date])
       return glossary_data
     end
@@ -20,7 +20,7 @@ module SharedHelpers
     path = File.join(site.source, '_data', 'articles.yml')
 
     # Check if the file exists
-    if File.exists?(path)
+    if File.exist?(path)
       articles_data = YAML.safe_load(File.read(path), permitted_classes: [Date])
 
       # extract the tags from every article in the articles_data
