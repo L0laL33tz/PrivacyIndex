@@ -1,0 +1,15 @@
+- title: Term1
+  content: |
+    Content for the glossary term "Term1" goes here.
+
+- title: Term2
+  content: |
+    Content for the glossary term "Term2" goes here.
+
+- title: Threats
+  content: |
+    Content for the glossary term "Threats" goes here. Also Term1. And term1.
+
+- title: Bitcoin
+  content: |
+    A peer to peer electronic cash system. Bitcoin is a decentralized digital currency that enables instant payments to anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. Bitcoin Core is the name of open source software which enables the use of this currency. A lot of threats.

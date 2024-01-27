@@ -1,0 +1,11 @@
+{% assign target_title = page.tag-name | downcase %}
+
+{% assign item_to_include = nil %}
+{% for item in site.data.glossary %}
+    {% assign source_title = item.title | downcase %}
+    {% if source_title == target_title %}
+        {% assign item_to_include = item %}
+    {% endif %}
+{% endfor %}
+
+{{item_to_include.content}}

@@ -1,0 +1,74 @@
+/** article table **/
+
+.article-entry {
+  margin-bottom: 20px;
+
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+.table-header, .row {
+  display: flex;  /* aligns all child elements (flex items) in a row */
+}
+
+.row.row-meta {
+  cursor: pointer;
+}
+
+.row.row-meta.row-detail-visible {
+}
+
+.row.row-meta:hover {
+  background-color: lighten($dm-table-zebra-color, 1%);
+}
+
+.row.row-detail {
+  background-color: lighten($dm-background-color, 15%);
+  padding: 10px;
+}
+
+.row.row-detail-hidden {
+  display: none;
+}
+
+.col {
+  flex: 1;        /* distributes space on the line equally among items */
+}
+
+/** links **/
+
+a.tag {
+  background-color: $tag-link-background-color;
+  color: $tag-link-foreground-color;
+  border: none;
+  padding-left: $tag-link-font-size;
+  padding-right: $tag-link-font-size;
+  display: inline-block;
+  border-radius: $tag-link-font-size;
+  font-size: $tag-link-font-size;
+}
+
+a.glossary {
+  background:url(../icons/book-solid.svg) no-repeat right center;
+  background-size: 10px;
+  padding-right:14px;
+}
+
+a.more {
+  background:url(../icons/arrow-up-right-from-square-solid.svg) no-repeat right center;
+  background-size: 10px;
+  padding-right:14px;
+}
+
+/** hero **/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}

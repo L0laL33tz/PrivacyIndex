@@ -1,0 +1,69 @@
+# TODO: think about more fields for publications.
+# Maybe there is a standard format for bibliographic data?
+# Maybe we can use a standard format and then convert it to the format we need?
+# Maybe Look at what Zotero can export?
+
+- title: Section 702
+  authors:
+    - EFF
+  date: 2023-01-01
+  description: Section 702 of the Foreign Intelligence Surveillance Act (FISA) is a sweeping surveillance authority that the NSA relies on to justify its mass collection of emails, text messages, and other electronic communications, including those of Americans. Section 702 will expire on December 31, 2023, unless Congress reauthorizes it.
+  tags:
+    - nation state
+    - regulations
+  type: article
+  url: https://act.eff.org/action/tell-congress-absent-major-changes-702-should-not-be-renewed
+
+- title: Remove Yourself From Google
+  authors:
+    - Rachel Tobac
+  date: 2023
+  description: A guide to removing yourself from Google
+  tags:
+    - HBC
+    - guides
+    - OPSEC
+    - OSINT
+    - tools
+  type: article
+  url: https://twitter.com/RachelTobac/status/1719781908291436800
+  pdf: ''
+
+- title: DeleteMe
+  authors:
+    - DeleteMe
+  date: 2023-01-01
+  description: A guide to deleting yourself from the internet
+  tags:
+    - HBC
+    - guides
+    - OPSEC
+    - OSINT
+    - tools
+  type: article
+  url: https://joindeleteme.com/blog/opt-out-guides/
+  pdf: ''
+
+- title: LNVPN
+  authors:
+    - LNVPN
+  date: 2022-01-01
+  description: A guide to setting up a VPN over the Lightning Network
+  tags:
+    - tools
+    - VPN
+    - encryption
+    - mobile phones
+    - bitcoin
+    - lightning
+  type: website
+  url: 'https://lnvpn.net/'
+  pdf: ''
+
+- title: Honest But Curious
+  description: The Nosy Neighbor
+  tags:
+    - threats
+    - HBC
+  type: content
+
