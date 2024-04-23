@@ -7,25 +7,48 @@
 </head>
 <body>
 	<div id="nav">
-		<ul>
-			<h2><a href="home.html">PrivacyIndex</a></h2>
-			<h2><a href="about.html">About</a></h2>
-			<h2><a href="threats.html">Threats</a></h2>
-			<h2><a href="directory/tools.html">Tools</a></h2>
-			<h2><a href="topics.html">Topics</a></h2>
-		<form action="/search" method="GET">
-      		<input type="text" name="q" placeholder="Search...">
-       		<input type="submit" value="Search">
-  		</form>
-		</ul>
-	</div>
+		<div id="logo"><img src="PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="home.html">Home</a></h1>
+		  <h1><a href="directory/tools.html">Tools</a></h1>
+		  <h1><a href="topics.html">Topics</a></h1>
+		  <h1><a href="about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="github-mark.png"></a>
+		
+		  </div>
+		</div>
+
 	<div id="about">
-		<h1>PrivacyIndex is a non-exhaustive, work in progress archive of <span class="tag">tools</span>, <span class="tag"><a href="articles">articles</a></span>, <span class="tag">research</span> and <span class="tag">discussions</span> to help you keep your digital life private. Designed as a digital scrapbook, all indexed items are tagged with the threat models that each entry addresses. If you are new to privacy, start by defining your <span class="tag">threat model</span>.</h1>
-		<h1>A threat model is the type of attacker you want to protect yourself against. Whether you want to protect yourself against a <span class="tag">nosy neighbor</span>, a <span class="tag">rogue corporation</span> or a <span class="tag">nation state</span>, each threat vector comes with different routes to protection and trade-offs. Some threat vectors are easier to protect against, some are harder, and some may be plain impossible to advert. But we don't want you to take our word for it. Privacy is hard, and many <span class="tag">privacy professionals</span> have different <span class="tag">opinions</span> on tools, <span class="tag">strategies</span> and <span class="tag">action plans</span>. PrivacyIndex exists to give you a broad overview of the tools available, the threats that emerge, and what privacy professionals have to say about them.</h1>
-		<h1>Use the tag function to navigate the content on this page, search for <span class="tag">topics</span> via the topics tag cloud or the search bar, or simply scroll through the privacy tools available to see which fit your threat vector best. Please note that we make no guarantees for the information on this page. If you feel like content is missing, outdated, incomplete or incorrect, please consider contributing on GitHub. This project is licensed under the <a href="http://www.wtfpl.net/about/">Do What The Fuck You Want To</a> public license, allowing you to copy, modify, redistribute, and sell original content of this page, but please don't forget to credit this project where it's due. For third party content, please see the original content's licenses. This project is inspired by Mindy Seu's <a href="https://cyberfeminismindex.com/">Cyberfeminism Index</a> and the work of <a href="https://cyberfeminismindex.com/">activism.net</a>.</h1>
-		<h1>If you stumbled accross this project by accident and have no idea why you should care about your personal privacy, we encourage you to start your journey by familiarizing yourself with the <span class="tag">philosophy</span> of privacy and explore real world <span class="tag">cases</span> in which privacy protections are important.</h1>
-		<h1>If you enjoy this work, buy its maintainer a coffee or two.</h1>
+		<p>PrivacyIndex is a non-exhaustive, work in progress archive of threats, <span class="tag"><a href="directory/tools.html">tools</a></span> and topics to help you stay private online. Use the green bubbles to navigate. If you are new to online privacy, start by <a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank">defining your threat vectors</a>.</p>
+		<p>PrivacyIndex exists to give you a broad overview of the tools available, the topics that may be important to you, and the threats that may arise. In privacy there is no one fits all, so we make no recommendations as to which tools you should be using. Features are not endorsements.</p>
+		<p>Please note that we make no guarantees for the information on this page. If you feel like content is missing, outdated, incomplete or incorrect, please consider <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank">contributing on GitHub</a>.</p>
+		<p>PrivacyIndex is licensed under the WTFPL public license, allowing you to copy, modify, redistribute, and sell original content of this page. For third party content, please see the original content's licenses.</p>
+		<p>This project is inspired by Mindy Seu's <a href="https://cyberfeminismindex.com/" target="_blank">Cyberfeminism Index</a> and the work of <a href="https://activism.net" target="_blank">activism.net</a>. If you enjoy this work, help its maintainer pay their mortgage.</p>
 	</div>
+
+	<div id="footer">
+		<div id="footnav-left">This website does not use cookies or other tracking services.</div>
+		<div id="footnav-right">Contact</br><a href="mailto:info@privacyindex.net">info@privacyindex.net</a></div>
+	</div>
+	<div id="footspace"></div>
+
+<script>
+	function toggleMenu() {
+		var menu = document.getElementById('menu');
+		if (menu.style.opacity === "0" || menu.style.opacity === "") {
+		  menu.style.opacity = "1";
+		  menu.style.pointerEvents = "auto";
+		} else {
+		  menu.style.opacity = "0";
+		  menu.style.pointerEvents = "none";
+		}
+	  }
+		  </script>
 </body>
 
 </html>
