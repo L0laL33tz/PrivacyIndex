@@ -7,21 +7,37 @@
 </head>
 <body>
 	<div id="nav">
-		<ul>
-			<h2><a href="home.html">PrivacyIndex</a></h2>
-			<h2><a href="about.html">About</a></h2>
-			<h2><a href="threats.html">Threats</a></h2>
-			<h2><a href="directory/tools.html">Tools</a></h2>
-			<h2><a href="topics.html">Topics</a></h2>
-		<form action="/search" method="GET">
-      		<input type="text" name="q" placeholder="Search...">
-       		<input type="submit" value="Search">
-  		</form>
-		</ul>
-	</div>
+		<div id="logo"><img src="PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="home.html">Home</a></h1>
+		  <h1><a href="directory/tools.html">Tools</a></h1>
+		  <h1><a href="topics.html">Topics</a></h1>
+		  <h1><a href="about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="github-mark.png"></a>
+		
+		  </div>
+		</div>
 	<div id="topics">
-		<h1><span class="tag"><a href="directory/guides.html">guides</a></span><span class="tag"><a href="directory/tools.html">tools</a></span><span class="tag"><a href="directory/socialmedia.html">social media</a></span><span class="tag"><a href="hbc">hbc</a></span><span class="tag"><a href="5eyes">5eyes</a></span></span><span class="tag"><a href="directory/philosophy.html">philosophy</a></span><span class="tag"><a href="article">article</a></span><span class="tag"><a href="philosophy">NSA</a></span></br><span class="tag"><a href="directory/encryption.html">encryption</a></span> <span class="tag"><a href="directory/nationstate.html">nation state</a></span><span class="tag"><a href="socialmedia">spyware</a></span><span class="tag"><a href="books">books</a></span><span class="tag"><a href="vpn">vpn</a></span><span class="tag"><a href="mobilephones">mobile phones</a></span><span class="tag"><a href="nationstate">MITM</a></span></span></br><span class="tag"><a href="cases">cases</a></span><span class="tag"><a href="articles">articles</a></span><span class="tag"><a href="research">research</a></span><span class="tag"><a href="discussions">discussions</a></span><span class="tag"><a href="messaging">messaging</a></span></h1>
+		<span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/books">Books</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/socialmedia.html">Social Media</a></span></span><span class="tag"><a href="directory/philosophy.html">Philosophy</a></span><span class="tag"><span class="tag"><a href="directory/encryption.html">Encryption</a></span><span class="tag"><a href="directory/spyware.html">Spyware</a></span><span class="tag"><a href="directory/vpn.html">VPN</a></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/research.html">Research</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span>
 	</div>
+
+<script>
+		function toggleMenu() {
+		var menu = document.getElementById('menu');
+		if (menu.style.opacity === "0" || menu.style.opacity === "") {
+		  menu.style.opacity = "1";
+		  menu.style.pointerEvents = "auto";
+		} else {
+		  menu.style.opacity = "0";
+		  menu.style.pointerEvents = "none";
+		}
+	  }
+</script>
 </body>
 
 </html>
