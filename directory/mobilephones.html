@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<title>Privacy Index</title>
+</head>
+<body>
+	<div id="nav">
+		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="../index.html">Home</a></h1>
+		  <h1><a href="directory/tools.html">Tools</a></h1>
+		  <h1><a href="../topics.html">Topics</a></h1>
+		  <h1><a href="../about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
+		
+		  </div> 
+		</div>
+
+<div id="hello"></div>
+
+<div class="marquee">
+    <h3>Mobile Phones</h3>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2022</div>
+      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">tools</a></span><span class="tag"><a href="vpn.html">VPN</a></span><span class="tag"><a href="mobilephones.html">mobile phones</a></span><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="lightning.html">Lightning</a></span></div>
+      <div class="expanding-element hidden">With LNVPN we've build a very simple VPN pay-as-you-go service paid via Bitcoin Lightning. Instead of paying around 5$ every month with your credit card for the privilege of being able to use a VPN service every now and then we provide you with a VPN connection on servers in different countries for one hour for only 10 cents in US$ -- paid via ⚡! </br></br> Text: <a href="https://lnvpn.net/faq">https://lnvpn.net/faq</a></br>Get LNVPN: <a href="https://lnvpn.net/" target="_blank">https://lnvpn.net/</a></br>Get LNVPN phone numbers: <a href="https://lnvpn.net/phone-numbers" target="_blank">https://lnvpn.net/phone-numbers</a></div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2022</div>
+      <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
+      <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="messaging.html">Messaging</a></span><span class="tag"><a href="mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="monero.html">Monero</a></span></div>
+      <div class="expanding-element hidden">JMP gives you a real phone number that is yours for calling and texting, including group and picture messages, that works from all your devices at once. Because we use the Jabber network, you can use any existing client even if we don't have an official recommendation for your device yet! Get different numbers to give out to friends, to dates, to professional contacts: whatever your needs, JMP helps you protect your privacy by keeping separate parts of your life, separate.</br></br> Text & get: <a href="https://jmp.chat/" target="_blank">https://jmp.chat/</a></div>
+</div>
+
+
+  
+
+    <script>
+
+        function toggleExpand(clickedItem) {
+          // Find the parent grid container of the clicked item
+          var container = clickedItem.closest('.grid-container');
+          
+          // Find the expanding element within this container
+          var expandingElement = container.querySelector('.expanding-element');
+        
+          if (expandingElement.classList.contains('hidden')) {
+            expandingElement.classList.remove('hidden');
+            expandingElement.style.display = 'block';
+          } else {
+            expandingElement.classList.add('hidden');
+            expandingElement.style.display = 'none';
+          }
+        }
+        
+        function toggleMenu() {
+          var menu = document.getElementById('menu');
+          if (menu.style.opacity === "0" || menu.style.opacity === "") {
+            menu.style.opacity = "1";
+            menu.style.pointerEvents = "auto";
+          } else {
+            menu.style.opacity = "0";
+            menu.style.pointerEvents = "none";
+          }
+        }
+            </script>
+</body>
+
+</html>
