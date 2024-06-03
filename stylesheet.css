@@ -352,4 +352,10 @@ span.tag a {
 	#footspace {
 		border-bottom: 0px;
 	}
+
+	#about p {
+		font-size: 4.5vw;
+		line-height: 4.5vw;
+		font-family: 'CothamSans';
+	}
 }
