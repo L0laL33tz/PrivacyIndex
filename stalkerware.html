@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<title>Privacy Index</title>
+</head>
+<body>
+	<div id="nav">
+		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="../index.html">Home</a></h1>
+		  <h1><a href="tools.html">Tools</a></h1>
+		  <h1><a href="../topics.html">Topics</a></h1>
+		  <h1><a href="../about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
+		
+		  </div> 
+		</div>
+
+<div id="hello"></div>
+
+<div class="marquee">
+    <h3>Stalkerware</h3>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Tech Crunch</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Hacked, Leaked, Exposed: Why You Should Never Use Stalkerware Apps</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="stalkerware.html">Stalkerware</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
+    <div class="expanding-element hidden">Using stalkerware is creepy, unethical, potentially illegal, and puts your data and that of your loved ones in danger.</p><p>Read the article: <a href="https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/" target="_blank" rel="noopener noreferrer">https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/</a></div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+    <div class="grid-item" onclick="toggleExpand(this)">The Register</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Stalkerware Usage Surging, Despite Data Privacy Concerns</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="stalkerware.html">Stalkerware</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
+    <div class="expanding-element hidden">Stalkerware has reached "pandemic proportions," according to Kaspersky, which documented a total of 31,031 people affected by the intrusive software in 2023 – up almost six percent on the prior year.</p><p>Read the article: <a href="https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/" target="_blank" rel="noopener noreferrer">https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/</a></div>
+  </div>
+
+    <script>
+
+        function toggleExpand(clickedItem) {
+          // Find the parent grid container of the clicked item
+          var container = clickedItem.closest('.grid-container');
+          
+          // Find the expanding element within this container
+          var expandingElement = container.querySelector('.expanding-element');
+        
+          if (expandingElement.classList.contains('hidden')) {
+            expandingElement.classList.remove('hidden');
+            expandingElement.style.display = 'block';
+          } else {
+            expandingElement.classList.add('hidden');
+            expandingElement.style.display = 'none';
+          }
+        }
+        
+        function toggleMenu() {
+          var menu = document.getElementById('menu');
+          if (menu.style.opacity === "0" || menu.style.opacity === "") {
+            menu.style.opacity = "1";
+            menu.style.pointerEvents = "auto";
+          } else {
+            menu.style.opacity = "0";
+            menu.style.pointerEvents = "none";
+          }
+        }
+            </script>
+</body>
+
+</html>

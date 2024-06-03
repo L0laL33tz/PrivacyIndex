@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<title>Privacy Index</title>
+</head>
+<body>
+	<div id="nav">
+		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="../index.html">Home</a></h1>
+		  <h1><a href="tools.html">Tools</a></h1>
+		  <h1><a href="../topics.html">Topics</a></h1>
+		  <h1><a href="../about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
+		
+		  </div> 
+		</div>
+
+<div id="hello"></div>
+
+<div class="marquee">
+    <h3>LGBTQ+</h3>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+    <div class="grid-item" onclick="toggleExpand(this)">State Scoop</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Why federal LGBTQI+ data collection should concern state, local officials</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="lgbtq.html">LGBTQ+</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
+    <div class="expanding-element hidden">The federal government is set to start collecting data on LGBTQI+ folks. Several data experts said they're concerned.</p><p><a href="https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/" target="_blank" rel="noopener noreferrer">https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/</a></div>
+  </div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+    <div class="grid-item" onclick="toggleExpand(this)">F-Secure</div>
+    <div class="grid-item" onclick="toggleExpand(this)">LGBTQ+ People Deserve Privacy</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="lgbtq.html">LGBTQ+</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
+    <div class="expanding-element hidden">For LGBTQ+ people across the globe, privacy can be a matter of life and death. Pride month offers an annual reminder that even data collection with best intentions presents unique risks for LGBTQ+ internet users..</p><p><a href="https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy" target="_blank" rel="noopener noreferrer">https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy</a></div>
+  </div>
+
+    <script>
+
+        function toggleExpand(clickedItem) {
+          // Find the parent grid container of the clicked item
+          var container = clickedItem.closest('.grid-container');
+          
+          // Find the expanding element within this container
+          var expandingElement = container.querySelector('.expanding-element');
+        
+          if (expandingElement.classList.contains('hidden')) {
+            expandingElement.classList.remove('hidden');
+            expandingElement.style.display = 'block';
+          } else {
+            expandingElement.classList.add('hidden');
+            expandingElement.style.display = 'none';
+          }
+        }
+        
+        function toggleMenu() {
+          var menu = document.getElementById('menu');
+          if (menu.style.opacity === "0" || menu.style.opacity === "") {
+            menu.style.opacity = "1";
+            menu.style.pointerEvents = "auto";
+          } else {
+            menu.style.opacity = "0";
+            menu.style.pointerEvents = "none";
+          }
+        }
+            </script>
+</body>
+
+</html>
