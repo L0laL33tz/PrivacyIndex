@@ -182,6 +182,7 @@ input[type="submit"] {
 	padding-top: 25%;
 	padding-bottom: 15%;
 	text-align: center;
+	max-width: 750px;
 }
 
 #topics span.tag {

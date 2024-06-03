@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<title>Privacy Index</title>
+</head>
+<body>
+	<div id="nav">
+		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+		</div>
+		
+		<div id="menu">
+		  <div id="ul">
+		  <h1><a href="../index.html">Home</a></h1>
+		  <h1><a href="directory/tools.html">Tools</a></h1>
+		  <h1><a href="../topics.html">Topics</a></h1>
+		  <h1><a href="../about.html">About</a></h1>
+		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+		  <h1>Donate</h1>
+		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
+		
+		  </div> 
+		</div>
+
+<div id="hello"></div>
+
+<div class="marquee">
+    <h3>Abortion</h3>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Forbes</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Nebraska Mom Sentenced to Two Years in Prison over Abortion Pills</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="cases.html">Cases</a></span><span class="tag"><a href="abortion.html">Abortion</a></span><span class="tag"><a href="messaging.html">Messaging</a></span></div>
+    <div class="expanding-element hidden">A Nebraska mother who helped her teenage daughter obtain abortion pills to end her pregnancy and later disposed of the fetus’ remains was sentenced to two years in prison on Friday, according to multiple reports, after breaking a state law that banned abortion after 20 weeks of pregnancy. Police said that while executing a search warrant they discovered evidence of internet searches related to medications “which could be used for the purpose of causing a miscarriage,” or abortion pills. Officers also said they found messages discussing the use of that medication after obtaining Facebook messages from Meta.</br></br> Text: <a href="https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db" target="_blank">https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db</a></div>
+  </div>
+  
+
+    <script>
+
+        function toggleExpand(clickedItem) {
+          // Find the parent grid container of the clicked item
+          var container = clickedItem.closest('.grid-container');
+          
+          // Find the expanding element within this container
+          var expandingElement = container.querySelector('.expanding-element');
+        
+          if (expandingElement.classList.contains('hidden')) {
+            expandingElement.classList.remove('hidden');
+            expandingElement.style.display = 'block';
+          } else {
+            expandingElement.classList.add('hidden');
+            expandingElement.style.display = 'none';
+          }
+        }
+        
+        function toggleMenu() {
+          var menu = document.getElementById('menu');
+          if (menu.style.opacity === "0" || menu.style.opacity === "") {
+            menu.style.opacity = "1";
+            menu.style.pointerEvents = "auto";
+          } else {
+            menu.style.opacity = "0";
+            menu.style.pointerEvents = "none";
+          }
+        }
+            </script>
+</body>
+
+</html>
