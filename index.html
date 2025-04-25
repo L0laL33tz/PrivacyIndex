@@ -1,634 +1,1274 @@
 <!DOCTYPE html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="stylesheet.css">
-	<title>Privacy Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Privacy Index</title>
 </head>
+
 <body>
-	<div id="nav">
-		<div id="logo"><img src="PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
-		</div>
-		
-		<div id="menu">
-		  <div id="ul">
-		  <h1><a href="index.html">Home</a></h1>
-		  <h1><a href="directory/tools.html">Tools</a></h1>
-		  <h1><a href="topics.html">Topics</a></h1>
-		  <h1><a href="about.html">About</a></h1>
-		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
-		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="github-mark.png"></a>
-		
-		  </div>
-		</div>
-</div>
-
-<div id="hello">
-</div>
-<div id="list">  
-
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2006</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Startpage</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy Friendly Search Enginge</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">Startpage is a privacy friendly search enginge that offers largely the same results as Google.</p><p><a href="https://startpage.com" target="_blank" rel="noopener noreferrer">https://startpage.com</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Bitcoin Policy Institute</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy in Public Part 1: What Privacy Is, and Why it Matters</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/philosophy.html">Philosophy</a></span><span class="tag"><a href="directory/research.html">Research</a></span></span></div>
-    <div class="expanding-element hidden">In this three-part series, adapted from Resistance Money, BPI Fellows Andrew Bailey, Bradley Rettler, and Craig Warmke explain what privacy is, why financial privacy matters, and the challenges bitcoin faces in providing users with financial privacy.</p><p><a href="https://www.btcpolicy.org/articles/privacy-in-public-part-1-what-privacy-is-and-why-it-matters" target="_blank" rel="noopener noreferrer">https://www.btcpolicy.org/articles/privacy-in-public-part-1-what-privacy-is-and-why-it-matters</a></div>
+  <div id="nav">
+    <div id="logo"><img src="PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
   </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2018</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Cake Wallet</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Bitcoin & Monero Wallet</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></span><span class="tag"><a href="directory/monero.html">Monero</a></span></div>
-    <div class="expanding-element hidden">Cake Wallet is a Bitcoin and Monero Wallet that offers a Silent Payment integration.</p><p><a href="https://cakewallet.com/" target="_blank" rel="noopener noreferrer">https://cakewallet.com/</a></div>
+  <div id="menu">
+    <div id="ul">
+      <h1><a href="index.html">Home</a></h1>
+      <h1><a href="directory/tools.html">Tools</a></h1>
+      <h1><a href="topics.html">Topics</a></h1>
+      <h1><a href="about.html">About</a></h1>
+      <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+      <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="github-mark.png"></a>
+
+    </div>
+  </div>
   </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2017</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Nja.La</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy-First Hosting</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></span><span class="tag"><a href="directory/monero.html">Monero</a></span></div>
-    <div class="expanding-element hidden">Nja.la is a privacy-first hosting provider payable in bitcoin and monero.</p><p><a href="https://njal.la/" target="_blank" rel="noopener noreferrer">https://njal.la/</a></div>
+  <div id="hello">
   </div>
+  <div id="list">
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span></div>
-    <div class="expanding-element hidden">A comparison of Messengers from a privacy perspective.</p><p><a href="https://privacyspreadsheet.com/messaging-apps" target="_blank" rel="noopener noreferrer">https://privacyspreadsheet.com/messaging-apps</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Mintpress News</div>
-    <div class="grid-item" onclick="toggleExpand(this)">How Israeli Spies Control Your VPN</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/vpn.html">VPN</a></span></div>
-    <div class="expanding-element hidden">A considerable chunk of the VPN market — including three of the six most popular VPNs — is quietly operated by an Israeli-owned company with close connections to Israel's national security state, including the elite Unit 8200 and Duvdevan Units of the Israeli Defense Forces (IDF).</p><p><a href="https://www.mintpressnews.com/exposed-how-israeli-spies-control-your-vpn/288259/" target="_blank" rel="noopener noreferrer">https://www.mintpressnews.com/exposed-how-israeli-spies-control-your-vpn/288259/</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Cloaked Wireless</div>
-    <div class="grid-item" onclick="toggleExpand(this)">E-SIMs to Protect Against SIM Swaps</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
-    <div class="expanding-element hidden">Cloaked Wireless uses crytographically proven authentication technologies and prevents staff from modifying customer accounts creating the best protection against SIM swap attacks available.</p><p><a href="https://cloakedwireless.com/" target="_blank" rel="noopener noreferrer">https://cloakedwireless.com/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2006</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Startpage</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy Friendly Search Enginge</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">Startpage is a privacy friendly search enginge that offers largely the same
+        results as Google.</p>
+        <p><a href="https://startpage.com" target="_blank" rel="noopener noreferrer">https://startpage.com</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Seth for Privacy</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Setting Up Silent Payments & Bolt12 Usernames</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
-    <div class="expanding-element hidden">A guide to setting up a Bitcoin username with Silent Payments & Bolt12 to improve your Bitcoin privacy.</p><p><a href="https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/" target="_blank" rel="noopener noreferrer">https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Bitcoin Policy Institute</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy in Public Part 1: What Privacy Is, and Why it Matters
+      </div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/philosophy.html">Philosophy</a></span><span class="tag"><a
+            href="directory/research.html">Research</a></span></span></div>
+      <div class="expanding-element hidden">In this three-part series, adapted from Resistance Money, BPI Fellows Andrew
+        Bailey, Bradley Rettler, and Craig Warmke explain what privacy is, why financial privacy matters, and the
+        challenges bitcoin faces in providing users with financial privacy.</p>
+        <p><a href="https://www.btcpolicy.org/articles/privacy-in-public-part-1-what-privacy-is-and-why-it-matters"
+            target="_blank"
+            rel="noopener noreferrer">https://www.btcpolicy.org/articles/privacy-in-public-part-1-what-privacy-is-and-why-it-matters</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Yael Writes</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Big Ass Data Broker Opt-Out List</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2018</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Cake Wallet</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Bitcoin & Monero Wallet</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span></span><span class="tag"><a
+            href="directory/monero.html">Monero</a></span></div>
+      <div class="expanding-element hidden">Cake Wallet is a Bitcoin and Monero Wallet that offers a Silent Payment
+        integration.</p>
+        <p><a href="https://cakewallet.com/" target="_blank" rel="noopener noreferrer">https://cakewallet.com/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
-    <div class="grid-item" onclick="toggleExpand(this)">VPN Overview</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/vpn.html">VPNs</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Using a VPN hides even this information from your ISP, by shifting the trust you place in your network to a server somewhere else in the world. As a result, the ISP then only sees that you are connected to a VPN and nothing about the activity that you're passing through it.</p><p><a href="https://www.privacyguides.org/en/basics/vpn-overview/" target="_blank" rel="noopener noreferrer">https://www.privacyguides.org/en/basics/vpn-overview/</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2017</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Nja.La</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy-First Hosting</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span></span><span class="tag"><a
+            href="directory/monero.html">Monero</a></span></div>
+      <div class="expanding-element hidden">Nja.la is a privacy-first hosting provider payable in bitcoin and monero.
+        </p>
+        <p><a href="https://njal.la/" target="_blank" rel="noopener noreferrer">https://njal.la/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Fascinating</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Frank Lucas' Opsec Fail</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Frank Lucas, the drug lord who ruled Harlem in the 1970s, was so discreet that the police didn't know who he was in 1971 when he decided to wear a $100,000 full-length chinchilla coat — to a Muhammad Ali boxing match.</p><p><a href="https://x.com/fasc1nate/status/1780671693448737030" target="_blank" rel="noopener noreferrer">https://x.com/fasc1nate/status/1780671693448737030</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></span><span class="tag"><a
+            href="directory/mobilephones.html">Mobile Phones</a></span></div>
+      <div class="expanding-element hidden">A comparison of Messengers from a privacy perspective.</p>
+        <p><a href="https://privacyspreadsheet.com/messaging-apps" target="_blank"
+            rel="noopener noreferrer">https://privacyspreadsheet.com/messaging-apps</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Rest Of World</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Changing Face Of Protest</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Mass protests used to offer a degree of safety in numbers. Facial recognition technology changes the equation.</p><p><a href="https://restofworld.org/2024/facial-recognition-government-protest-surveillance/" target="_blank" rel="noopener noreferrer">https://restofworld.org/2024/facial-recognition-government-protest-surveillance/</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Mintpress News</div>
+      <div class="grid-item" onclick="toggleExpand(this)">How Israeli Spies Control Your VPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/vpn.html">VPN</a></span>
+      </div>
+      <div class="expanding-element hidden">A considerable chunk of the VPN market — including three of the six most
+        popular VPNs — is quietly operated by an Israeli-owned company with close connections to Israel's national
+        security state, including the elite Unit 8200 and Duvdevan Units of the Israeli Defense Forces (IDF).</p>
+        <p><a href="https://www.mintpressnews.com/exposed-how-israeli-spies-control-your-vpn/288259/" target="_blank"
+            rel="noopener noreferrer">https://www.mintpressnews.com/exposed-how-israeli-spies-control-your-vpn/288259/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Choosing The VPN That's Right For You</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/vpn.html">VPNs</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">There is no one-size-fits-all solution when it comes to VPNs. Just like email, there are many VPN services out there and you should choose the service that works best for you. Depending on which one you choose, you can benefit from an increased level of security when connected to networks you wouldn’t ordinarily trust. But this means you're placing your trust in the VPN.</p><p><a href="https://ssd.eff.org/module/choosing-vpn-thats-right-you" target="_blank" rel="noopener noreferrer">https://ssd.eff.org/module/choosing-vpn-thats-right-you</a></div>
-  </div> 
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Cloaked Wireless</div>
+      <div class="grid-item" onclick="toggleExpand(this)">E-SIMs to Protect Against SIM Swaps</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/mobilephones.html">Mobile
+            Phones</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
+      <div class="expanding-element hidden">Cloaked Wireless uses crytographically proven authentication technologies
+        and prevents staff from modifying customer accounts creating the best protection against SIM swap attacks
+        available.</p>
+        <p><a href="https://cloakedwireless.com/" target="_blank"
+            rel="noopener noreferrer">https://cloakedwireless.com/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Tales From The Crypt</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Major U.S. Carriers Fined $196 Million by FCC for Selling Customer Location Data</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">The FCC has imposed fines totaling $196 million on T-Mobile, AT&T, and Verizon for unauthorized sales of customer location data, sparking debates over privacy.</p><p><a href="https://www.tftc.io/fcc-fines-us-carriers-196-million-location-data/" target="_blank" rel="noopener noreferrer">https://www.tftc.io/fcc-fines-us-carriers-196-million-location-data/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Seth for Privacy</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Setting Up Silent Payments & Bolt12 Usernames</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span></div>
+      <div class="expanding-element hidden">A guide to setting up a Bitcoin username with Silent Payments & Bolt12 to
+        improve your Bitcoin privacy.</p>
+        <p><a href="https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/" target="_blank"
+            rel="noopener noreferrer">https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">WIRED</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Germany Raises Red Flags About Palantir’s Big Data Dragnet</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">A court has issued strict limits on how police can pull innocent bystanders into big data investigations.</p><p><a href="https://www.wired.com/story/palantir-germany-gotham-dragnet/" target="_blank" rel="noopener noreferrer">https://www.wired.com/story/palantir-germany-gotham-dragnet/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Yael Writes</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Big Ass Data Broker Opt-Out List</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p>
+        <p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md"
+            target="_blank"
+            rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Guardian</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Australian man says border force made him hand over phone passcode</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">“In all three cases, I was required to hand over passwords to personal electronic devices despite objecting to this invasion of my privacy, and with all three cases personal devices were searched out of my view for extended periods,” he said.</p><p><a href="https://www.theguardian.com/australia-news/article/2024/may/14/australian-man-says-border-force-made-him-hand-over-phone-passcode-by-threatening-to-keep-device-indefinitely" target="_blank" rel="noopener noreferrer">https://www.theguardian.com/australia-news/article/2024/may/14/australian-man-says-border-force-made-him-hand-over-phone-passcode-by-threatening-to-keep-device-indefinitely</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
+      <div class="grid-item" onclick="toggleExpand(this)">VPN Overview</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/vpn.html">VPNs</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span>
+      </div>
+      <div class="expanding-element hidden">Using a VPN hides even this information from your ISP, by shifting the trust
+        you place in your network to a server somewhere else in the world. As a result, the ISP then only sees that you
+        are connected to a VPN and nothing about the activity that you're passing through it.</p>
+        <p><a href="https://www.privacyguides.org/en/basics/vpn-overview/" target="_blank"
+            rel="noopener noreferrer">https://www.privacyguides.org/en/basics/vpn-overview/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Forbes</div>
-    <div class="grid-item" onclick="toggleExpand(this)">New Police Tech Can Detect Phones, Pet Trackers And Library Books In A Moving Car</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Italy-based Leonardo says its tool creates a fingerprint of drivers and passengers by scanning for anything that emits a signal from their car, from smartphones to library books.</p><p><a href="https://www.forbes.com/sites/thomasbrewster/2024/05/14/police-car-surveillance-tech-uncovers-phones-pet-trackers-and-library-books/" target="_blank" rel="noopener noreferrer">https://www.forbes.com/sites/thomasbrewster/2024/05/14/police-car-surveillance-tech-uncovers-phones-pet-trackers-and-library-books/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Fascinating</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Frank Lucas' Opsec Fail</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Frank Lucas, the drug lord who ruled Harlem in the 1970s, was so discreet
+        that the police didn't know who he was in 1971 when he decided to wear a $100,000 full-length chinchilla coat —
+        to a Muhammad Ali boxing match.</p>
+        <p><a href="https://x.com/fasc1nate/status/1780671693448737030" target="_blank"
+            rel="noopener noreferrer">https://x.com/fasc1nate/status/1780671693448737030</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Threema</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Delete WhatsApp Day</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/messaging.html">Messaging</a></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Like Facebook and Instagram, WhatsApp requires users to disclose personally identifiable information, such as their phone number. For this reason, Meta is able to identify users across different services and combine their data from various platforms into comprehensive user profiles.</p><p><a href="https://x.com/ThreemaApp/status/1790674229727265037" target="_blank" rel="noopener noreferrer">https://x.com/ThreemaApp/status/1790674229727265037</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Rest Of World</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Changing Face Of Protest</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Mass protests used to offer a degree of safety in numbers. Facial
+        recognition technology changes the equation.</p>
+        <p><a href="https://restofworld.org/2024/facial-recognition-government-protest-surveillance/" target="_blank"
+            rel="noopener noreferrer">https://restofworld.org/2024/facial-recognition-government-protest-surveillance/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Ars Technica</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Connected cars’ illegal data collection and use now on FTC’s “radar”</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">The FTC says that automakers and other businesses must protect users' data against illegal collection, use, and disclosure. It points to recent enforcement actions against companies in other sectors that have illegally collected or used geolocation data, surreptitiously disclosed sensitive user data, and illegally used sensitive data for automated decisions.</p><p><a href="https://arstechnica.com/cars/2024/05/connected-cars-illegal-data-collection-and-use-now-on-ftcs-radar/" target="_blank" rel="noopener noreferrer">https://arstechnica.com/cars/2024/05/connected-cars-illegal-data-collection-and-use-now-on-ftcs-radar/</a></div>
-  </div>
- 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Bisq Network</div>
-    <div class="grid-item" onclick="toggleExpand(this)">BISQ</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">Buy and sell bitcoin for fiat (or other cryptocurrencies) privately and securely using Bisq's peer-to-peer network and open-source desktop software. No registration required. </p><p><a href="https://bisq.network/" target="_blank" rel="noopener noreferrer">https://bisq.network/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Choosing The VPN That's Right For You</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/vpn.html">VPNs</a></span><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">There is no one-size-fits-all solution when it comes to VPNs. Just like
+        email, there are many VPN services out there and you should choose the service that works best for you.
+        Depending on which one you choose, you can benefit from an increased level of security when connected to
+        networks you wouldn’t ordinarily trust. But this means you're placing your trust in the VPN.</p>
+        <p><a href="https://ssd.eff.org/module/choosing-vpn-thats-right-you" target="_blank"
+            rel="noopener noreferrer">https://ssd.eff.org/module/choosing-vpn-thats-right-you</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Athena Alpha</div>
-    <div class="grid-item" onclick="toggleExpand(this)">How To Buy Bitcoin On Bisq: Buy Bitcoin KYC Free</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">Buying Bitcoin is a top priority for most beginners, however doing so without having to bend at the knee of the all seeing KYC exchanges that force you to hand over all your private information is a huge concern for privacy and security reasons.</p><p><a href="https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/" target="_blank" rel="noopener noreferrer">https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Tales From The Crypt</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Major U.S. Carriers Fined $196 Million by FCC for Selling
+        Customer Location Data</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/mobilephones.html">Mobile
+            Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">The FCC has imposed fines totaling $196 million on T-Mobile, AT&T, and
+        Verizon for unauthorized sales of customer location data, sparking debates over privacy.</p>
+        <p><a href="https://www.tftc.io/fcc-fines-us-carriers-196-million-location-data/" target="_blank"
+            rel="noopener noreferrer">https://www.tftc.io/fcc-fines-us-carriers-196-million-location-data/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">What Bitcoin Did</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Bitcoin Scammer Uncensored</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">“Everyone’s very afraid of being hacked, and, unless you understand the underlying security in all of your accounts, you’re going to have trouble not knowing whether these claims by a robocall are real.” </p><p><a href="https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored" target="_blank" rel="noopener noreferrer">https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">WIRED</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Germany Raises Red Flags About Palantir’s Big Data Dragnet
+      </div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">A court has issued strict limits on how police can pull innocent bystanders
+        into big data investigations.</p>
+        <p><a href="https://www.wired.com/story/palantir-germany-gotham-dragnet/" target="_blank"
+            rel="noopener noreferrer">https://www.wired.com/story/palantir-germany-gotham-dragnet/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Linus Tech Tips</div>
-    <div class="grid-item" onclick="toggleExpand(this)">De-Googling Your Life</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Google owns or has access to almost everything - search, email, even your web browser! Unless you like being the product, how can you opt out and still live a connected life?</p><p><a href="https://www.youtube.com/watch?v=YnSv8ylLfPw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=YnSv8ylLfPw</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Guardian</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Australian man says border force made him hand over phone
+        passcode</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/mobilephones.html">Mobile
+            Phones</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">“In all three cases, I was required to hand over passwords to personal
+        electronic devices despite objecting to this invasion of my privacy, and with all three cases personal devices
+        were searched out of my view for extended periods,” he said.</p>
+        <p><a
+            href="https://www.theguardian.com/australia-news/article/2024/may/14/australian-man-says-border-force-made-him-hand-over-phone-passcode-by-threatening-to-keep-device-indefinitely"
+            target="_blank"
+            rel="noopener noreferrer">https://www.theguardian.com/australia-news/article/2024/may/14/australian-man-says-border-force-made-him-hand-over-phone-passcode-by-threatening-to-keep-device-indefinitely</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Guardian</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Katie Britt proposes federal database to collect data on pregnant people</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">The More Opportunities for Moms to Succeed (Moms) act proposes to establish an online government database called “pregnancy.gov” listing resources related to pregnancy, including information about adoption agencies and pregnancy care providers, except for those that provide abortion-related services.</p><p><a href="https://www.theguardian.com/us-news/article/2024/may/11/katie-britt-proposes-federal-database-to-collect-data-on-pregnant-people" target="_blank" rel="noopener noreferrer">https://www.theguardian.com/us-news/article/2024/may/11/katie-britt-proposes-federal-database-to-collect-data-on-pregnant-people</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Forbes</div>
+      <div class="grid-item" onclick="toggleExpand(this)">New Police Tech Can Detect Phones, Pet Trackers And Library
+        Books In A Moving Car</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Italy-based Leonardo says its tool creates a fingerprint of drivers and
+        passengers by scanning for anything that emits a signal from their car, from smartphones to library books.</p>
+        <p><a
+            href="https://www.forbes.com/sites/thomasbrewster/2024/05/14/police-car-surveillance-tech-uncovers-phones-pet-trackers-and-library-books/"
+            target="_blank"
+            rel="noopener noreferrer">https://www.forbes.com/sites/thomasbrewster/2024/05/14/police-car-surveillance-tech-uncovers-phones-pet-trackers-and-library-books/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">State Scoop</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Why federal LGBTQI+ data collection should concern state, local officials</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/lgbtq.html">LGBTQ+</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">The federal government is set to start collecting data on LGBTQI+ folks. Several data experts said they're concerned.</p><p><a href="https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/" target="_blank" rel="noopener noreferrer">https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Threema</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Delete WhatsApp Day</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span><span class="tag"><a
+            href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Like Facebook and Instagram, WhatsApp requires users to disclose personally
+        identifiable information, such as their phone number. For this reason, Meta is able to identify users across
+        different services and combine their data from various platforms into comprehensive user profiles.</p>
+        <p><a href="https://x.com/ThreemaApp/status/1790674229727265037" target="_blank"
+            rel="noopener noreferrer">https://x.com/ThreemaApp/status/1790674229727265037</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">F-Secure</div>
-    <div class="grid-item" onclick="toggleExpand(this)">LGBTQ+ People Deserve Privacy</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/lgbtq.html">LGBTQ+</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">For LGBTQ+ people across the globe, privacy can be a matter of life and death. Pride month offers an annual reminder that even data collection with best intentions presents unique risks for LGBTQ+ internet users..</p><p><a href="https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy" target="_blank" rel="noopener noreferrer">https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Ars Technica</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Connected cars’ illegal data collection and use now on FTC’s
+        “radar”</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">The FTC says that automakers and other businesses must protect users' data
+        against illegal collection, use, and disclosure. It points to recent enforcement actions against companies in
+        other sectors that have illegally collected or used geolocation data, surreptitiously disclosed sensitive user
+        data, and illegally used sensitive data for automated decisions.</p>
+        <p><a
+            href="https://arstechnica.com/cars/2024/05/connected-cars-illegal-data-collection-and-use-now-on-ftcs-radar/"
+            target="_blank"
+            rel="noopener noreferrer">https://arstechnica.com/cars/2024/05/connected-cars-illegal-data-collection-and-use-now-on-ftcs-radar/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Opsec Failures</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Opsec Failures</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">OpSecFailure lists how individuals messed up their OpSec.</p><p><a href="https://opsecfail.github.io/" target="_blank" rel="noopener noreferrer">https://opsecfail.github.io/</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2020</div>
-    <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Atlas Of Surveillance</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Spyware</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Documenting Police Tech in Our Communities with Open Source Research</p><p><a href="https://atlasofsurveillance.org/" target="_blank" rel="noopener noreferrer">https://atlasofsurveillance.org/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Bisq Network</div>
+      <div class="grid-item" onclick="toggleExpand(this)">BISQ</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">Buy and sell bitcoin for fiat (or other cryptocurrencies) privately and
+        securely using Bisq's peer-to-peer network and open-source desktop software. No registration required. </p>
+        <p><a href="https://bisq.network/" target="_blank" rel="noopener noreferrer">https://bisq.network/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Register</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Stalkerware Usage Surging, Despite Data Privacy Concerns</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/stalkerware.html">Stalkerware</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Stalkerware has reached "pandemic proportions," according to Kaspersky, which documented a total of 31,031 people affected by the intrusive software in 2023 – up almost six percent on the prior year.</p><p>Read the article: <a href="https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/" target="_blank" rel="noopener noreferrer">https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Athena Alpha</div>
+      <div class="grid-item" onclick="toggleExpand(this)">How To Buy Bitcoin On Bisq: Buy Bitcoin KYC Free</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">Buying Bitcoin is a top priority for most beginners, however doing so
+        without having to bend at the knee of the all seeing KYC exchanges that force you to hand over all your private
+        information is a huge concern for privacy and security reasons.</p>
+        <p><a href="https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/" target="_blank"
+            rel="noopener noreferrer">https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Tech Crunch</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Hacked, Leaked, Exposed: Why You Should Never Use Stalkerware Apps</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/stalkerware.html">Stalkerware</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">Using stalkerware is creepy, unethical, potentially illegal, and puts your data and that of your loved ones in danger.</p><p>Read the article: <a href="https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/" target="_blank" rel="noopener noreferrer">https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">What Bitcoin Did</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Bitcoin Scammer Uncensored</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">“Everyone’s very afraid of being hacked, and, unless you understand the
+        underlying security in all of your accounts, you’re going to have trouble not knowing whether these claims by a
+        robocall are real.” </p>
+        <p><a href="https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored" target="_blank"
+            rel="noopener noreferrer">https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
-    <div class="grid-item" onclick="toggleExpand(this)">A Wider View On TunnelVision And VPN Advice</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/vpn.html">VPNs</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">If you listen to any podcast long enough, you will almost certainly hear an advertisement for a Virtual Private Network (VPN). These advertisements usually assert that a VPN is the only tool you need to stop cyber criminals, malware, government surveillance, and online tracking. But these advertisements vastly oversell the benefits of VPNs. The reality is that VPNs are mainly useful for one thing: routing your network connection through a different network.</p><p>Read the article: <a href="https://www.eff.org/deeplinks/2024/05/wider-view-tunnelvision-and-vpn-advice" target="_blank" rel="noopener noreferrer">https://www.eff.org/deeplinks/2024/05/wider-view-tunnelvision-and-vpn-advice</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Linus Tech Tips</div>
+      <div class="grid-item" onclick="toggleExpand(this)">De-Googling Your Life</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">Google owns or has access to almost everything - search, email, even your
+        web browser! Unless you like being the product, how can you opt out and still live a connected life?</p>
+        <p><a href="https://www.youtube.com/watch?v=YnSv8ylLfPw" target="_blank"
+            rel="noopener noreferrer">https://www.youtube.com/watch?v=YnSv8ylLfPw</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">New York Times</div>
-    <div class="grid-item" onclick="toggleExpand(this)">In A Post-Roe World, The Future Of Digital Privacy Looks Even Grimmer</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">The sheer amount of tech tools and knowledge required to discreetly seek an abortion underlines how wide open we are to surveillance.</p><p>Read the article: <a href="https://www.nytimes.com/2022/07/13/technology/personaltech/abortion-privacy-roe-surveillance.html" target="_blank" rel="noopener noreferrer">https://www.nytimes.com/2022/07/13/technology/personaltech/abortion-privacy-roe-surveillance.html</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Euro News</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Female Health Apps Aren't Doing Enough To Protect Sensitive Data, Study Says</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">A team of researchers in the UK found “problematic practices, including inconsistencies” regarding data privacy in several female health apps. They presented the research at the Conference on Human Factors in Computing Systems in Honolulu, Hawaii in the US this month. The researchers analysed 20 popular female health apps available on the US and UK Google Play Stores providing a service related to female reproductive health. They looked at the applications’ data privacy policies and practices. </p><p>Read the article: <a href="https://www.euronews.com/next/2024/05/31/female-health-apps-arent-doing-enough-to-protect-sensitive-data-study-says" target="_blank" rel="noopener noreferrer">https://www.euronews.com/next/2024/05/31/female-health-apps-arent-doing-enough-to-protect-sensitive-data-study-says</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Guardian</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Katie Britt proposes federal database to collect data on
+        pregnant people</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/abortion.html">Abortion</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">The More Opportunities for Moms to Succeed (Moms) act proposes to establish
+        an online government database called “pregnancy.gov” listing resources related to pregnancy, including
+        information about adoption agencies and pregnancy care providers, except for those that provide abortion-related
+        services.</p>
+        <p><a
+            href="https://www.theguardian.com/us-news/article/2024/may/11/katie-britt-proposes-federal-database-to-collect-data-on-pregnant-people"
+            target="_blank"
+            rel="noopener noreferrer">https://www.theguardian.com/us-news/article/2024/may/11/katie-britt-proposes-federal-database-to-collect-data-on-pregnant-people</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Tech Xplore</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy In The Post-Roe Era</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">In 2022, when the U.S. Supreme Court overturned Roe v. Wade—ending the constitutional right to an abortion—privacy advocates warned women against using smartphone apps to track their periods. The calls came out of concerns that the data collected by these apps could put women at risk of prosecution in states where abortion became illegal.</p><p>Read the article: <a href="https://techxplore.com/news/2024-05-privacy-roe-era.html" target="_blank" rel="noopener noreferrer">https://techxplore.com/news/2024-05-privacy-roe-era.html</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">State Scoop</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Why federal LGBTQI+ data collection should concern state,
+        local officials</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/lgbtq.html">LGBTQ+</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">The federal government is set to start collecting data on LGBTQI+ folks.
+        Several data experts said they're concerned.</p>
+        <p><a href="https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/" target="_blank"
+            rel="noopener noreferrer">https://statescoop.com/lgbtqi-data-federal-collection-state-local-government/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Intel Techniques</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Extreme Privacy: What It Takes To Disappear</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/books.html">Books</a></span></div>
-    <div class="expanding-element hidden">This textbook is PROACTIVE. It is about starting over. It is the complete guide that he would give to any new client in an extreme situation. It leaves nothing out and provides explicit details of every step he takes to make someone completely disappear, including legal documents and a chronological order of events. The information shared in this book is based on real experiences with his actual clients, and is unlike any content ever released in his other books. The stories are all true, with the exception of changed names, locations, and minor details in order to protect the privacy of those described. For many, this is the only privacy manual needed to secure a new digital life.</p><p>Get the book here: <a href="https://inteltechniques.com/book7.html" target="_blank" rel="noopener noreferrer">https://inteltechniques.com/book7.html</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">F-Secure</div>
+      <div class="grid-item" onclick="toggleExpand(this)">LGBTQ+ People Deserve Privacy</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/lgbtq.html">LGBTQ+</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">For LGBTQ+ people across the globe, privacy can be a matter of life and
+        death. Pride month offers an annual reminder that even data collection with best intentions presents unique
+        risks for LGBTQ+ internet users..</p>
+        <p><a href="https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy" target="_blank"
+            rel="noopener noreferrer">https://www.f-secure.com/en/articles/lgbtq-people-deserve-privacy</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Threat Modeling</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Balancing security, privacy, and usability is one of the first and most difficult tasks you'll face on your privacy journey. Everything is a trade-off: The more secure something is, the more restricting or inconvenient it generally is, etc. Often, people find that the problem with the tools they see recommended is that they're just too hard to start using! </p><p>Read the guide: <a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank" rel="noopener noreferrer">https://www.privacyguides.org/en/basics/threat-modeling/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Opsec Failures</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Opsec Failures</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">OpSecFailure lists how individuals messed up their OpSec.</p>
+        <p><a href="https://opsecfail.github.io/" target="_blank"
+            rel="noopener noreferrer">https://opsecfail.github.io/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">This guide covers the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. As this is intended for all audiences, it will be rich in easily destroyable strawmen examples that do not necessarily reflect complex realistic threats and risks.</p><p>This guide is not a "how to be anonymous on the internet", "how to protect yourself online", or "best practices" guide. Those are all countermeasure-first approaches that assume a threat model that applies to you (when it often doesn't). Instead, this guide teaches you how to understand that for yourself through the opsec process. While many guides can be useful to learn about potential threats and countermeasures, the countermeasure-first approach of the "best practices" fallacy has no place in opsec and ultimately leads to baseless paranoia. </p><p>Read the guide <a href="https://opsec101.org/" target="_blank" rel="noopener noreferrer">here.</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2020</div>
+      <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Atlas Of Surveillance</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Spyware</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Documenting Police Tech in Our Communities with Open Source Research</p>
+        <p><a href="https://atlasofsurveillance.org/" target="_blank"
+            rel="noopener noreferrer">https://atlasofsurveillance.org/</a>
+      </div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2019</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Bitcoin Wiki</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Privacy Best Practices</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
-    <div class="expanding-element hidden">While Bitcoin can support strong privacy, many ways of using it are usually not very private. With a proper understanding of the technology, bitcoin can indeed be used in a very private and anonymous way. As of 2019 most casual enthusiasts of bitcoin believe it is perfectly traceable; this is completely false. Around 2011 most casual enthusiasts believed it is totally private; which is also false. There is some nuance - in certain situations, bitcoin can be very private. But it is not simple to understand, and it takes some time and reading. </p><p>Read the full guide <a href="https://en.bitcoin.it/Privacy" target="_blank" rel="noopener noreferrer">here.</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Register</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Stalkerware Usage Surging, Despite Data Privacy Concerns</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/stalkerware.html">Stalkerware</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Stalkerware has reached "pandemic proportions," according to Kaspersky,
+        which documented a total of 31,031 people affected by the intrusive software in 2023 – up almost six percent on
+        the prior year.</p>
+        <p>Read the article: <a href="https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/"
+            target="_blank"
+            rel="noopener noreferrer">https://www.theregister.com/2024/03/20/stalkerware_usage_surging_despite_data/</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Tech Crunch</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Hacked, Leaked, Exposed: Why You Should Never Use Stalkerware
+        Apps</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/stalkerware.html">Stalkerware</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Using stalkerware is creepy, unethical, potentially illegal, and puts your
+        data and that of your loved ones in danger.</p>
+        <p>Read the article: <a
+            href="https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/"
+            target="_blank"
+            rel="noopener noreferrer">https://techcrunch.com/2024/05/31/hacked-leaked-exposed-why-you-should-stop-using-stalkerware-apps/</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
+      <div class="grid-item" onclick="toggleExpand(this)">A Wider View On TunnelVision And VPN Advice</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/vpn.html">VPNs</a></span><span class="tag"><a href="directory/tools.html">Tools</a></span>
+      </div>
+      <div class="expanding-element hidden">If you listen to any podcast long enough, you will almost certainly hear an
+        advertisement for a Virtual Private Network (VPN). These advertisements usually assert that a VPN is the only
+        tool you need to stop cyber criminals, malware, government surveillance, and online tracking. But these
+        advertisements vastly oversell the benefits of VPNs. The reality is that VPNs are mainly useful for one thing:
+        routing your network connection through a different network.</p>
+        <p>Read the article: <a href="https://www.eff.org/deeplinks/2024/05/wider-view-tunnelvision-and-vpn-advice"
+            target="_blank"
+            rel="noopener noreferrer">https://www.eff.org/deeplinks/2024/05/wider-view-tunnelvision-and-vpn-advice</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">New York Times</div>
+      <div class="grid-item" onclick="toggleExpand(this)">In A Post-Roe World, The Future Of Digital Privacy Looks Even
+        Grimmer</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/abortion.html">Abortion</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">The sheer amount of tech tools and knowledge required to discreetly seek an
+        abortion underlines how wide open we are to surveillance.</p>
+        <p>Read the article: <a
+            href="https://www.nytimes.com/2022/07/13/technology/personaltech/abortion-privacy-roe-surveillance.html"
+            target="_blank"
+            rel="noopener noreferrer">https://www.nytimes.com/2022/07/13/technology/personaltech/abortion-privacy-roe-surveillance.html</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Euro News</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Female Health Apps Aren't Doing Enough To Protect Sensitive
+        Data, Study Says</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/abortion.html">Abortion</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">A team of researchers in the UK found “problematic practices, including
+        inconsistencies” regarding data privacy in several female health apps. They presented the research at the
+        Conference on Human Factors in Computing Systems in Honolulu, Hawaii in the US this month. The researchers
+        analysed 20 popular female health apps available on the US and UK Google Play Stores providing a service related
+        to female reproductive health. They looked at the applications’ data privacy policies and practices. </p>
+        <p>Read the article: <a
+            href="https://www.euronews.com/next/2024/05/31/female-health-apps-arent-doing-enough-to-protect-sensitive-data-study-says"
+            target="_blank"
+            rel="noopener noreferrer">https://www.euronews.com/next/2024/05/31/female-health-apps-arent-doing-enough-to-protect-sensitive-data-study-says</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Tech Xplore</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy In The Post-Roe Era</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/abortion.html">Abortion</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">In 2022, when the U.S. Supreme Court overturned Roe v. Wade—ending the
+        constitutional right to an abortion—privacy advocates warned women against using smartphone apps to track their
+        periods. The calls came out of concerns that the data collected by these apps could put women at risk of
+        prosecution in states where abortion became illegal.</p>
+        <p>Read the article: <a href="https://techxplore.com/news/2024-05-privacy-roe-era.html" target="_blank"
+            rel="noopener noreferrer">https://techxplore.com/news/2024-05-privacy-roe-era.html</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Intel Techniques</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Extreme Privacy: What It Takes To Disappear</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/books.html">Books</a></span></div>
+      <div class="expanding-element hidden">This textbook is PROACTIVE. It is about starting over. It is the complete
+        guide that he would give to any new client in an extreme situation. It leaves nothing out and provides explicit
+        details of every step he takes to make someone completely disappear, including legal documents and a
+        chronological order of events. The information shared in this book is based on real experiences with his actual
+        clients, and is unlike any content ever released in his other books. The stories are all true, with the
+        exception of changed names, locations, and minor details in order to protect the privacy of those described. For
+        many, this is the only privacy manual needed to secure a new digital life.</p>
+        <p>Get the book here: <a href="https://inteltechniques.com/book7.html" target="_blank"
+            rel="noopener noreferrer">https://inteltechniques.com/book7.html</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Threat Modeling</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">Balancing security, privacy, and usability is one of the first and most
+        difficult tasks you'll face on your privacy journey. Everything is a trade-off: The more secure something is,
+        the more restricting or inconvenient it generally is, etc. Often, people find that the problem with the tools
+        they see recommended is that they're just too hard to start using! </p>
+        <p>Read the guide: <a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank"
+            rel="noopener noreferrer">https://www.privacyguides.org/en/basics/threat-modeling/</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2023</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">This guide covers the basics of Opsec in a way that most anyone should be
+        able to understand. This guide is split up into topics designed to be linked to directly for the purpose of
+        convenient educational discussion. As this is intended for all audiences, it will be rich in easily destroyable
+        strawmen examples that do not necessarily reflect complex realistic threats and risks.</p>
+        <p>This guide is not a "how to be anonymous on the internet", "how to protect yourself online", or "best
+          practices" guide. Those are all countermeasure-first approaches that assume a threat model that applies to you
+          (when it often doesn't). Instead, this guide teaches you how to understand that for yourself through the opsec
+          process. While many guides can be useful to learn about potential threats and countermeasures, the
+          countermeasure-first approach of the "best practices" fallacy has no place in opsec and ultimately leads to
+          baseless paranoia. </p>
+        <p>Read the guide <a href="https://opsec101.org/" target="_blank" rel="noopener noreferrer">here.</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2019</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Bitcoin Wiki</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy Best Practices</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span></div>
+      <div class="expanding-element hidden">While Bitcoin can support strong privacy, many ways of using it are usually
+        not very private. With a proper understanding of the technology, bitcoin can indeed be used in a very private
+        and anonymous way. As of 2019 most casual enthusiasts of bitcoin believe it is perfectly traceable; this is
+        completely false. Around 2011 most casual enthusiasts believed it is totally private; which is also false. There
+        is some nuance - in certain situations, bitcoin can be very private. But it is not simple to understand, and it
+        takes some time and reading. </p>
+        <p>Read the full guide <a href="https://en.bitcoin.it/Privacy" target="_blank"
+            rel="noopener noreferrer">here.</a>
+      </div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2024</div>
       <div class="grid-item" onclick="toggleExpand(this)">Haaretz</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Israel Tried to Keep Sensitive Spy Tech Under Wraps. It Leaked Abroad</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/mercenaries.html">Mercenaries</a></span><span class="tag"><a href="directory/spyware.html">Spyware</a></span><span class="tag"><a href="directory/adblock.html">Adblock</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-      <div class="expanding-element hidden">Documents reveal that Intellexa, which is run by Israelis but operates outside of Israel's exports regime, presented an ad-based spyware – considered the cutting edge of Israeli offensive cyber. [...] The documents include a demonstration of the Aladdin system, technical explanations on how it infects target devices, and even examples of potential malicious ads – seemingly targeting graphic designers and activists with job offers, through which the spyware will be introduced to their device.</br></br> Text: <a href="https://archive.ph/IGrTw#selection-1255.347-1255.643" target="_blank">https://archive.ph/IGrTw#selection-1255.347-1255.643</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Israel Tried to Keep Sensitive Spy Tech Under Wraps. It Leaked
+        Abroad</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/mercenaries.html">Mercenaries</a></span><span class="tag"><a
+            href="directory/spyware.html">Spyware</a></span><span class="tag"><a
+            href="directory/adblock.html">Adblock</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Documents reveal that Intellexa, which is run by Israelis but operates
+        outside of Israel's exports regime, presented an ad-based spyware – considered the cutting edge of Israeli
+        offensive cyber. [...] The documents include a demonstration of the Aladdin system, technical explanations on
+        how it infects target devices, and even examples of potential malicious ads – seemingly targeting graphic
+        designers and activists with job offers, through which the spyware will be introduced to their device.</br></br>
+        Text: <a href="https://archive.ph/IGrTw#selection-1255.347-1255.643"
+          target="_blank">https://archive.ph/IGrTw#selection-1255.347-1255.643</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2024</div>
       <div class="grid-item" onclick="toggleExpand(this)">Snowstorm</div>
       <div class="grid-item" onclick="toggleExpand(this)">A Decentralized, Censorship Resistant VPN</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/vpn.html">VPN</a></span></span><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-      <div class="expanding-element hidden">Snowstorm is a decentralized, censorship resistant VPN based on the Tor Project's Snowflake protocol. Instead of connecting to a commercial VPN provider, whose IPs can easily be blocked in times of censorship, Snowstorm connects users to the computers of other people. In Snowflake, peers, who act as proxies, connect to the Internet via a Tor entry node. Snowstorm removes the need for the Tor network letting peers connect directly, making the connection much faster. </br></br>Learn more: <a href="https://mashable.com/article/snowstorm-beta-launch-anti-censorship-vpn-snowflake-tor" target="_blank">https://mashable.com/article/snowstorm-beta-launch-anti-censorship-vpn-snowflake-tor</a></br></br>Download: <a href="https://snowstorm.net/">https://snowstorm.net/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/vpn.html">VPN</a></span></span><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">Snowstorm is a decentralized, censorship resistant VPN based on the Tor
+        Project's Snowflake protocol. Instead of connecting to a commercial VPN provider, whose IPs can easily be
+        blocked in times of censorship, Snowstorm connects users to the computers of other people. In Snowflake, peers,
+        who act as proxies, connect to the Internet via a Tor entry node. Snowstorm removes the need for the Tor network
+        letting peers connect directly, making the connection much faster. </br></br>Learn more: <a
+          href="https://mashable.com/article/snowstorm-beta-launch-anti-censorship-vpn-snowflake-tor"
+          target="_blank">https://mashable.com/article/snowstorm-beta-launch-anti-censorship-vpn-snowflake-tor</a></br></br>Download:
+        <a href="https://snowstorm.net/">https://snowstorm.net/</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2024</div>
       <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
       <div class="grid-item" onclick="toggleExpand(this)">Section 702</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/regulation.html">Regulation</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-      <div class="expanding-element hidden">We all deserve privacy in our communications, and part of that is trusting that the government will only access them within the limits of the law. But it's now clear that the government hasn’t respected any limits on the intelligence community or law enforcement. When it comes to Section 702, a law that continues to allow spying on Americans, they've ignored our rights.</br></br> Text: <a href="https://act.eff.org/action/tell-congress-absent-major-changes-702-should-not-be-renewed" target="_blank">https://act.eff.org/action/tell-congress-absent-major-changes-702-should-not-be-renewed</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/regulation.html">Regulation</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">We all deserve privacy in our communications, and part of that is trusting
+        that the government will only access them within the limits of the law. But it's now clear that the government
+        hasn’t respected any limits on the intelligence community or law enforcement. When it comes to Section 702, a
+        law that continues to allow spying on Americans, they've ignored our rights.</br></br> Text: <a
+          href="https://act.eff.org/action/tell-congress-absent-major-changes-702-should-not-be-renewed"
+          target="_blank">https://act.eff.org/action/tell-congress-absent-major-changes-702-should-not-be-renewed</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
       <div class="grid-item" onclick="toggleExpand(this)">Surveillance Self Defense</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-      <div class="expanding-element hidden">Surveillance Self-Defense is a digital security guide that teaches you how to assess your personal risk from online spying. It can help protect you from surveillance by those who might want to find out your secrets, from petty criminals to nation states. We offer guides to the best privacy-enhancing tools and explain how to incorporate protecting yourself against surveillance into your daily routine. This guide will teach you how to make a security plan for your digital information and how to determine what solutions are best for you.</br></br> Text: <a href="https://ssd.eff.org/" target="_blank">https://ssd.eff.org/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">Surveillance Self-Defense is a digital security guide that teaches you how
+        to assess your personal risk from online spying. It can help protect you from surveillance by those who might
+        want to find out your secrets, from petty criminals to nation states. We offer guides to the best
+        privacy-enhancing tools and explain how to incorporate protecting yourself against surveillance into your daily
+        routine. This guide will teach you how to make a security plan for your digital information and how to determine
+        what solutions are best for you.</br></br> Text: <a href="https://ssd.eff.org/"
+          target="_blank">https://ssd.eff.org/</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Forbes</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Nebraska Mom Sentenced to Two Years in Prison over Abortion Pills</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/abortion.html">Abortion</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></div>
-      <div class="expanding-element hidden">A Nebraska mother who helped her teenage daughter obtain abortion pills to end her pregnancy and later disposed of the fetus’ remains was sentenced to two years in prison on Friday, according to multiple reports, after breaking a state law that banned abortion after 20 weeks of pregnancy. Police said that while executing a search warrant they discovered evidence of internet searches related to medications “which could be used for the purpose of causing a miscarriage,” or abortion pills. Officers also said they found messages discussing the use of that medication after obtaining Facebook messages from Meta.</br></br> Text: <a href="https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db" target="_blank">https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Nebraska Mom Sentenced to Two Years in Prison over Abortion
+        Pills</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/abortion.html">Abortion</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></div>
+      <div class="expanding-element hidden">A Nebraska mother who helped her teenage daughter obtain abortion pills to
+        end her pregnancy and later disposed of the fetus’ remains was sentenced to two years in prison on Friday,
+        according to multiple reports, after breaking a state law that banned abortion after 20 weeks of pregnancy.
+        Police said that while executing a search warrant they discovered evidence of internet searches related to
+        medications “which could be used for the purpose of causing a miscarriage,” or abortion pills. Officers also
+        said they found messages discussing the use of that medication after obtaining Facebook messages from
+        Meta.</br></br> Text: <a
+          href="https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db"
+          target="_blank">https://www.forbes.com/sites/anafaguy/2023/09/22/nebraska-mom-who-gave-teen-daughter-abortion-pills-sentenced-to-two-years-in-prison/?sh=1518bdf7b1db</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Middle East Eye</div>
       <div class="grid-item" onclick="toggleExpand(this)">School Girl Sentenced to 18 Years in Prison over Tweets</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/socialmedia.html">Social Media</a></span></div>
-      <div class="expanding-element hidden">Saudi Arabia has sentenced a secondary schoolgirl to 18 years in jail and a travel ban for posting tweets in support of political prisoners, according to a rights group. Saudi human rights defenders and lawyers, however, disputed Mohammed bin Salman's allegations and said the crackdown on social media users is correlated with his ascent to power and the introduction of new judicial bodies that have since overseen a crackdown on his critics. "He is able, with one word or the stroke of a pen, in seconds, to change the laws if he wants," Taha al-Hajji, a Saudi lawyer and legal consultant with the European Saudi Organisation for Human Rights, told Middle East Eye this week.</br></br> Text: <a href="https://www.middleeasteye.net/news/saudi-arabia-sentences-schoolgirl-18-years-tweets" target="_blank">https://www.middleeasteye.net/news/saudi-arabia-sentences-schoolgirl-18-years-tweets</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/socialmedia.html">Social
+            Media</a></span></div>
+      <div class="expanding-element hidden">Saudi Arabia has sentenced a secondary schoolgirl to 18 years in jail and a
+        travel ban for posting tweets in support of political prisoners, according to a rights group. Saudi human rights
+        defenders and lawyers, however, disputed Mohammed bin Salman's allegations and said the crackdown on social
+        media users is correlated with his ascent to power and the introduction of new judicial bodies that have since
+        overseen a crackdown on his critics. "He is able, with one word or the stroke of a pen, in seconds, to change
+        the laws if he wants," Taha al-Hajji, a Saudi lawyer and legal consultant with the European Saudi Organisation
+        for Human Rights, told Middle East Eye this week.</br></br> Text: <a
+          href="https://www.middleeasteye.net/news/saudi-arabia-sentences-schoolgirl-18-years-tweets"
+          target="_blank">https://www.middleeasteye.net/news/saudi-arabia-sentences-schoolgirl-18-years-tweets</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Citizen Lab</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Egyptian Presidential Candidate Targeted with Predator Spyware </div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/spyware.html">Spyware</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></div>
-      <div class="expanding-element hidden">In August and September 2023, Eltantawy’s Vodafone Egypt mobile connection was persistently selected for targeting via network injection; when Eltantawy visited certain websites not using HTTPS, a device installed at the border of Vodafone Egypt’s network automatically redirected him to a malicious website to infect his phone with Cytrox’s Predator spyware. Given that Egypt is a known customer of Cytrox’s Predator spyware, and the spyware was delivered via network injection from a device located physically inside Egypt, we attribute the network injection attack to the Egyptian government with high confidence.</br></br> Text: <a href="https://citizenlab.ca/2023/09/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/" target="_blank">https://citizenlab.ca/2023/09/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Egyptian Presidential Candidate Targeted with Predator Spyware
+      </div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/spyware.html">Spyware</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></div>
+      <div class="expanding-element hidden">In August and September 2023, Eltantawy’s Vodafone Egypt mobile connection
+        was persistently selected for targeting via network injection; when Eltantawy visited certain websites not using
+        HTTPS, a device installed at the border of Vodafone Egypt’s network automatically redirected him to a malicious
+        website to infect his phone with Cytrox’s Predator spyware. Given that Egypt is a known customer of Cytrox’s
+        Predator spyware, and the spyware was delivered via network injection from a device located physically inside
+        Egypt, we attribute the network injection attack to the Egyptian government with high confidence.</br></br>
+        Text: <a
+          href="https://citizenlab.ca/2023/09/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/"
+          target="_blank">https://citizenlab.ca/2023/09/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Rachel Tobac</div>
       <div class="grid-item" onclick="toggleExpand(this)">Remove Yourself From Google</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guide.html">Guides</a></span></div>
-      <div class="expanding-element hidden">Google your name plus the words “phone number”, “email address”, or “address”. Do you see your sensitive personal info on data brokerage sites? 
-        Google has a tool to request a takedown of that info from Google itself (but doesn’t remove it from the other sites).
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guide.html">Guides</a></span></div>
+      <div class="expanding-element hidden">Google your name plus the words “phone number”, “email address”, or
+        “address”. Do you see your sensitive personal info on data brokerage sites?
+        Google has a tool to request a takedown of that info from Google itself (but doesn’t remove it from the other
+        sites).
         Steps for Google removal request:
         - click the three vertical dots next to the Google results you want removed
         - click "remove result"
-        -  click “it shows my personal contact info”, following remaining steps.</br></br> Text: <a href="https://twitter.com/RachelTobac/status/1719781908291436800" target="_blank">https://twitter.com/RachelTobac/status/1719781908291436800</a></div>
+        - click “it shows my personal contact info”, following remaining steps.</br></br> Text: <a
+          href="https://twitter.com/RachelTobac/status/1719781908291436800"
+          target="_blank">https://twitter.com/RachelTobac/status/1719781908291436800</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Delete Me</div>
       <div class="grid-item" onclick="toggleExpand(this)">Delete Me</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/guides.html">Guides</a></span></div>
-      <div class="expanding-element hidden">DeleteMe is a tool to help you remove your personal information from data brokerage sites. The service is paid, but the site offers many diy-opt-out guides helpful to remove your data from online brokerage services.</br></br> See the Guides: <a href="https://joindeleteme.com/blog/opt-out-guides/" target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/guides.html">Guides</a></span></div>
+      <div class="expanding-element hidden">DeleteMe is a tool to help you remove your personal information from data
+        brokerage sites. The service is paid, but the site offers many diy-opt-out guides helpful to remove your data
+        from online brokerage services.</br></br> See the Guides: <a
+          href="https://joindeleteme.com/blog/opt-out-guides/"
+          target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Danielle Citron</div>
-        <div class="grid-item" onclick="toggleExpand(this)">The Fight for Privacy</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/books.html">Books</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span></div>
-        <div class="expanding-element hidden">Privacy is disappearing. From our sex lives to our workout routines, the details of our lives once relegated to pen and paper have joined the slipstream of new technology. As new technologies invite new violations, people have power over one another like never before, from revenge porn to blackmail, attaching life-altering risks to growing up, dating online, or falling in love. The Fight for Privacy takes the focus off Silicon Valley moguls to investigate the price we pay as technology migrates deeper into every aspect of our lives: entering our bedrooms and our bathrooms and our midnight texts; our relationships with friends, family, lovers, and kids; and even our relationship with ourselves. Danielle Citron is a professor of law at the University of Virginia and a civil rights advocate.</br></br> Buy the Book: <a href="https://bookshop.org/p/books/the-fight-for-privacy-protecting-dignity-identity-and-love-in-the-digital-age-danielle-keats-citron/18092442?ean=9780393882315&ref=&source=IndieBound&title=The+Fight+for+Privacy%3A+Protecting+Dignity%2C+Identity%2C+and+Love+in+the+Digital+Age" target="_blank">https://bookshop.org/p/books/the-fight-for-privacy-protecting-dignity-identity-and-love-in-the-digital-age-danielle-keats-citron/18092442?ean=9780393882315&ref=&source=IndieBound&title=The+Fight+for+Privacy%3A+Protecting+Dignity%2C+Identity%2C+and+Love+in+the+Digital+Age</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Danielle Citron</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Fight for Privacy</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/books.html">Books</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span></div>
+      <div class="expanding-element hidden">Privacy is disappearing. From our sex lives to our workout routines, the
+        details of our lives once relegated to pen and paper have joined the slipstream of new technology. As new
+        technologies invite new violations, people have power over one another like never before, from revenge porn to
+        blackmail, attaching life-altering risks to growing up, dating online, or falling in love. The Fight for Privacy
+        takes the focus off Silicon Valley moguls to investigate the price we pay as technology migrates deeper into
+        every aspect of our lives: entering our bedrooms and our bathrooms and our midnight texts; our relationships
+        with friends, family, lovers, and kids; and even our relationship with ourselves. Danielle Citron is a professor
+        of law at the University of Virginia and a civil rights advocate.</br></br> Buy the Book: <a
+          href="https://bookshop.org/p/books/the-fight-for-privacy-protecting-dignity-identity-and-love-in-the-digital-age-danielle-keats-citron/18092442?ean=9780393882315&ref=&source=IndieBound&title=The+Fight+for+Privacy%3A+Protecting+Dignity%2C+Identity%2C+and+Love+in+the+Digital+Age"
+          target="_blank">https://bookshop.org/p/books/the-fight-for-privacy-protecting-dignity-identity-and-love-in-the-digital-age-danielle-keats-citron/18092442?ean=9780393882315&ref=&source=IndieBound&title=The+Fight+for+Privacy%3A+Protecting+Dignity%2C+Identity%2C+and+Love+in+the+Digital+Age</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
       <div class="grid-item" onclick="toggleExpand(this)">Tech Crunch</div>
       <div class="grid-item" onclick="toggleExpand(this)">Telegram Leaks User IP Addresses To Contacts</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span><span class="tag"><a href="research.html">Research</a></span></div>
-      <div class="expanding-element hidden">The popular messaging app Telegram can leak your IP address if you simply add a hacker to your contacts and accept a phone call from them. TechCrunch verified the researcher’s findings by adding Simonov to the contacts of a newly created Telegram account. Simonov then called the account, and shortly after provided TechCrunch with the IP address of the computer where the experiment was being carried out. Telegram boasts 700 million users all over the world, and has always marketed itself as a “secure” and “private” messaging app, even though experts have repeatedly warned that Telegram is not secure.</br></br> Text: <a href="https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts" target="_blank">https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span><span class="tag"><a
+            href="research.html">Research</a></span></div>
+      <div class="expanding-element hidden">The popular messaging app Telegram can leak your IP address if you simply
+        add a hacker to your contacts and accept a phone call from them. TechCrunch verified the researcher’s findings
+        by adding Simonov to the contacts of a newly created Telegram account. Simonov then called the account, and
+        shortly after provided TechCrunch with the IP address of the computer where the experiment was being carried
+        out. Telegram boasts 700 million users all over the world, and has always marketed itself as a “secure” and
+        “private” messaging app, even though experts have repeatedly warned that Telegram is not secure.</br></br> Text:
+        <a href="https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts"
+          target="_blank">https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Amagicom, Tor Project</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Mullvad Browser</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/adblock.html">Adblock</a></span><span class="tag"><a href="browsing.html">Browsing</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
-        <div class="expanding-element hidden">When you visit a website, you can be identified and tracked through your IP address, third-party cookies, all kinds of tracking scripts, and through so called browser fingerprints. That’s why masking your IP address is not enough to stop the data collection. However, by using a trustworthy VPN in combination with a privacy-focused browser, you can put up a better resistance against the mass surveillance of today. That's why we partnered with the Tor Project to develop Mullvad Browser – a browser designed to minimize tracking and fingerprints.</br></br> Text: <a href="https://mullvad.net/en/browser" target="_blank">https://mullvad.net/en/browser</a></br>Download: <a href="https://mullvad.net/en/download/browser/" target="_blank">https://mullvad.net/en/download/browser/</a></div>
-  </div>
-  
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2022</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Amagicom, Tor Project</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Mullvad Browser</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/adblock.html">Adblock</a></span><span class="tag"><a
+            href="browsing.html">Browsing</a></span><span class="tag"><a href="encryption.html">Encryption</a></span>
+      </div>
+      <div class="expanding-element hidden">When you visit a website, you can be identified and tracked through your IP
+        address, third-party cookies, all kinds of tracking scripts, and through so called browser fingerprints. That’s
+        why masking your IP address is not enough to stop the data collection. However, by using a trustworthy VPN in
+        combination with a privacy-focused browser, you can put up a better resistance against the mass surveillance of
+        today. That's why we partnered with the Tor Project to develop Mullvad Browser – a browser designed to minimize
+        tracking and fingerprints.</br></br> Text: <a href="https://mullvad.net/en/browser"
+          target="_blank">https://mullvad.net/en/browser</a></br>Download: <a
+          href="https://mullvad.net/en/download/browser/" target="_blank">https://mullvad.net/en/download/browser/</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2022</div>
       <div class="grid-item" onclick="toggleExpand(this)">Boston Law Review</div>
       <div class="grid-item" onclick="toggleExpand(this)">Privacy Harms</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/research.html">Research</a></span><span class="tag"><a href="directory/regulation.html">Regulation</a></span></div>
-      <div class="expanding-element hidden">The requirement of harm has significantly impeded the enforcement of privacy law. In most tort and contract cases, plaintiffs must establish that they have suffered harm. Even when legislation does not require it, courts have taken it upon themselves to add a harm element. Harm is also a requirement to establish standing in federal court. In Spokeo v. Robins and TransUnion v. Ramirez, the U.S. Supreme Court ruled that courts can override congressional judgment about cognizable harm and dismiss privacy claims. This article makes two central contributions. The first is the construction of a typology for courts to understand harm so that privacy violations can be tackled and remedied in a meaningful way. Privacy harms consist of various different types, which to date have been recognized by courts in inconsistent ways. Our typology of privacy harms elucidates why certain types of privacy harms should be recognized as cognizable. The second contribution is providing an approach to when privacy harm should be required. In many cases, harm should not be required because it is irrelevant to the purpose of the lawsuit. Currently, much privacy litigation suffers from a misalignment of enforcement goals and remedies. We contend that the law should be guided by the essential question: When and how should privacy regulation be enforced? We offer an approach that aligns enforcement goals with appropriate remedies.</br></br> Text: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222#" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222#</a></div>
-  </div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/research.html">Research</a></span><span class="tag"><a
+            href="directory/regulation.html">Regulation</a></span></div>
+      <div class="expanding-element hidden">The requirement of harm has significantly impeded the enforcement of privacy
+        law. In most tort and contract cases, plaintiffs must establish that they have suffered harm. Even when
+        legislation does not require it, courts have taken it upon themselves to add a harm element. Harm is also a
+        requirement to establish standing in federal court. In Spokeo v. Robins and TransUnion v. Ramirez, the U.S.
+        Supreme Court ruled that courts can override congressional judgment about cognizable harm and dismiss privacy
+        claims. This article makes two central contributions. The first is the construction of a typology for courts to
+        understand harm so that privacy violations can be tackled and remedied in a meaningful way. Privacy harms
+        consist of various different types, which to date have been recognized by courts in inconsistent ways. Our
+        typology of privacy harms elucidates why certain types of privacy harms should be recognized as cognizable. The
+        second contribution is providing an approach to when privacy harm should be required. In many cases, harm should
+        not be required because it is irrelevant to the purpose of the lawsuit. Currently, much privacy litigation
+        suffers from a misalignment of enforcement goals and remedies. We contend that the law should be guided by the
+        essential question: When and how should privacy regulation be enforced? We offer an approach that aligns
+        enforcement goals with appropriate remedies.</br></br> Text: <a
+          href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222#"
+          target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222#</a></div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2022</div>
-        <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
-        <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">tools</a></span><span class="tag"><a>VPN</a></span><span class="tag"><a>ISPs</a></span><span class="tag"><a>mobile phones</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
-        <div class="expanding-element hidden">With LNVPN we've build a very simple VPN pay-as-you-go service paid via Bitcoin Lightning. Instead of paying around 5$ every month with your credit card for the privilege of being able to use a VPN service every now and then we provide you with a VPN connection on servers in different countries for one hour for only 10 cents in US$ -- paid via ⚡! </br></br> Text: <a href="https://lnvpn.net/faq">https://lnvpn.net/faq</a></br>Get LNVPN: <a href="https://lnvpn.net/" target="_blank">https://lnvpn.net/</a></br>Get LNVPN phone numbers: <a href="https://lnvpn.net/phone-numbers" target="_blank">https://lnvpn.net/phone-numbers</a></div>
-  </div>
+      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">tools</a></span><span class="tag"><a>VPN</a></span><span
+          class="tag"><a>ISPs</a></span><span class="tag"><a>mobile phones</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span></div>
+      <div class="expanding-element hidden">With LNVPN we've build a very simple VPN pay-as-you-go service paid via
+        Bitcoin Lightning. Instead of paying around 5$ every month with your credit card for the privilege of being able
+        to use a VPN service every now and then we provide you with a VPN connection on servers in different countries
+        for one hour for only 10 cents in US$ -- paid via ⚡! </br></br> Text: <a
+          href="https://lnvpn.net/faq">https://lnvpn.net/faq</a></br>Get LNVPN: <a href="https://lnvpn.net/"
+          target="_blank">https://lnvpn.net/</a></br>Get LNVPN phone numbers: <a href="https://lnvpn.net/phone-numbers"
+          target="_blank">https://lnvpn.net/phone-numbers</a></div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2022</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Onion Share</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-        <div class="expanding-element hidden">OnionShare is an open-source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.</br></br> Text: <a href="https://onionshare.org/">https://onionshare.org/</a></br>Download: <a href="https://onionshare.org/#download" target="_blank">https://onionshare.org/#download</a></div>
-  </div>
-  
-  <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Onion Share</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">OnionShare is an open-source tool that lets you securely and anonymously
+        share files, host websites, and chat with friends using the Tor network.</br></br> Text: <a
+          href="https://onionshare.org/">https://onionshare.org/</a></br>Download: <a
+          href="https://onionshare.org/#download" target="_blank">https://onionshare.org/#download</a></div>
+    </div>
+
+    <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2022</div>
-        <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
-        <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a href="directory/monero.html">Monero</a></span></div>
-        <div class="expanding-element hidden">JMP gives you a real phone number that is yours for calling and texting, including group and picture messages, that works from all your devices at once. Because we use the Jabber network, you can use any existing client even if we don't have an official recommendation for your device yet! Get different numbers to give out to friends, to dates, to professional contacts: whatever your needs, JMP helps you protect your privacy by keeping separate parts of your life, separate.</br></br> Text & get: <a href="https://jmp.chat/" target="_blank">https://jmp.chat/</a></div>
-  </div>
+      <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
+      <div class="grid-item" onclick="toggleExpand(this)">JMP</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span><span class="tag"><a
+            href="directory/mobilephones.html">Mobile Phones</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a
+            href="directory/monero.html">Monero</a></span></div>
+      <div class="expanding-element hidden">JMP gives you a real phone number that is yours for calling and texting,
+        including group and picture messages, that works from all your devices at once. Because we use the Jabber
+        network, you can use any existing client even if we don't have an official recommendation for your device yet!
+        Get different numbers to give out to friends, to dates, to professional contacts: whatever your needs, JMP helps
+        you protect your privacy by keeping separate parts of your life, separate.</br></br> Text & get: <a
+          href="https://jmp.chat/" target="_blank">https://jmp.chat/</a></div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2021</div>
       <div class="grid-item" onclick="toggleExpand(this)">Hacker Noon</div>
       <div class="grid-item" onclick="toggleExpand(this)">Seven Reasons to Question Telegram's Privacy Claims</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></div>
-      <div class="expanding-element hidden">Telegram seen as the gold-standard for secure messaging is deeply concerning. So here are 7 reasons why Telegram isn't as secure as it paints itself to be.</br></br> Text: <a href="https://hackernoon.com/7-reason-why-telegram-is-insecure-by-design-but-millions-still-flock-to-it-ignoring-privacy-concerns-qq1o344c" target="_blank">https://hackernoon.com/7-reason-why-telegram-is-insecure-by-design-but-millions-still-flock-to-it-ignoring-privacy-concerns-qq1o344c</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></div>
+      <div class="expanding-element hidden">Telegram seen as the gold-standard for secure messaging is deeply
+        concerning. So here are 7 reasons why Telegram isn't as secure as it paints itself to be.</br></br> Text: <a
+          href="https://hackernoon.com/7-reason-why-telegram-is-insecure-by-design-but-millions-still-flock-to-it-ignoring-privacy-concerns-qq1o344c"
+          target="_blank">https://hackernoon.com/7-reason-why-telegram-is-insecure-by-design-but-millions-still-flock-to-it-ignoring-privacy-concerns-qq1o344c</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2019</div>
       <div class="grid-item" onclick="toggleExpand(this)">Refraction Network</div>
       <div class="grid-item" onclick="toggleExpand(this)">Solving Domain Censorship at ISP Level</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/censorship.html">Censorship</a></span><span class="tag"><a href="directory/research.html">Research</a></span></div>
-      <div class="expanding-element hidden">Refraction Network aims to solve domain censorship at the ISP Level. Rather than trying to hide individual proxies from censors, refraction brings proxy functionality to the core of the network, through partnership with ISPs and other network operators. This makes censorship much more costly, because it prevents censors from selectively blocking only those servers used to provide Internet freedom. Instead, whole networks outside the censored country provide Internet freedom to users—and any encrypted data exchange between a censored nation’s Internet and a participating friendly network can become a conduit for the free flow of information.</br></br>Text: <a href="https://refraction.network/">https://refraction.network/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/censorship.html">Censorship</a></span><span class="tag"><a
+            href="directory/research.html">Research</a></span></div>
+      <div class="expanding-element hidden">Refraction Network aims to solve domain censorship at the ISP Level. Rather
+        than trying to hide individual proxies from censors, refraction brings proxy functionality to the core of the
+        network, through partnership with ISPs and other network operators. This makes censorship much more costly,
+        because it prevents censors from selectively blocking only those servers used to provide Internet freedom.
+        Instead, whole networks outside the censored country provide Internet freedom to users—and any encrypted data
+        exchange between a censored nation’s Internet and a participating friendly network can become a conduit for the
+        free flow of information.</br></br>Text: <a href="https://refraction.network/">https://refraction.network/</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2019</div>
       <div class="grid-item" onclick="toggleExpand(this)">Yasha Levine</div>
       <div class="grid-item" onclick="toggleExpand(this)">Surveillance Valley</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/books.html">Books</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/spyware.html">Spyware</a></span></div>
-      <div class="expanding-element hidden">In Surveillance Valley: The Secret Military History of the Internet, Yasha Levine traces the history of the internet back to its beginnings as a Vietnam-era tool for spying on guerrilla fighters and antiwar protesters–a military computer networking project that ultimately envisioned the creation of a global system of surveillance and prediction. Levine shows how the same military objectives that drove the development of early internet technology are still at the heart of Silicon Valley today. Spies, counterinsurgency campaigns, hippie entrepreneurs, privacy apps funded by the CIA. From the 1960s to the 2010s — this revelatory and sweeping story will make you reconsider what you know about the most powerful, ubiquitous tool ever created.</br></br>Text: <a href="http://surveillancevalley.com/">http://surveillancevalley.com/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/books.html">Books</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/spyware.html">Spyware</a></span></div>
+      <div class="expanding-element hidden">In Surveillance Valley: The Secret Military History of the Internet, Yasha
+        Levine traces the history of the internet back to its beginnings as a Vietnam-era tool for spying on guerrilla
+        fighters and antiwar protesters–a military computer networking project that ultimately envisioned the creation
+        of a global system of surveillance and prediction. Levine shows how the same military objectives that drove the
+        development of early internet technology are still at the heart of Silicon Valley today. Spies,
+        counterinsurgency campaigns, hippie entrepreneurs, privacy apps funded by the CIA. From the 1960s to the 2010s —
+        this revelatory and sweeping story will make you reconsider what you know about the most powerful, ubiquitous
+        tool ever created.</br></br>Text: <a href="http://surveillancevalley.com/">http://surveillancevalley.com/</a>
+      </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2018</div>
       <div class="grid-item" onclick="toggleExpand(this)">WIRED</div>
       <div class="grid-item" onclick="toggleExpand(this)">Encrypted Messaging Isn't Magic</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></div>
-      <div class="expanding-element hidden">As the adage goes, there's no such thing as perfect security. And feeling invincible could get you in trouble. End-to-end encryption transforms messages into unintelligible chunks of data as soon as a user presses send. From there, the message isn't reconstituted into something understandable until it reaches the receiver's device. Along the way, the message is unreadable, protected from prying eyes. It essentially amounts to a bodyguard who picks you up at your house, rides around with you in your car, and walks you to the door of wherever you're going. You're safe during the transport, but your vigilance shouldn't end there. [...] It's easy to forget in practice that people you message with could show the chat to someone else, take screenshots, or retain the conversation on their device indefinitely. You also need to keep track of how many devices you've stored your encrypted messages on. If you sync chats between, say, your smartphone and your laptop, or back them up in the cloud, there are potentially more opportunities for the data to be exposed. Your chats may be encrypted, but your backups may not.</br></br> Text: <a href="https://www.wired.com/story/encrypted-messaging-isnt-magic/" target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></div>
+      <div class="expanding-element hidden">As the adage goes, there's no such thing as perfect security. And feeling
+        invincible could get you in trouble. End-to-end encryption transforms messages into unintelligible chunks of
+        data as soon as a user presses send. From there, the message isn't reconstituted into something understandable
+        until it reaches the receiver's device. Along the way, the message is unreadable, protected from prying eyes. It
+        essentially amounts to a bodyguard who picks you up at your house, rides around with you in your car, and walks
+        you to the door of wherever you're going. You're safe during the transport, but your vigilance shouldn't end
+        there. [...] It's easy to forget in practice that people you message with could show the chat to someone else,
+        take screenshots, or retain the conversation on their device indefinitely. You also need to keep track of how
+        many devices you've stored your encrypted messages on. If you sync chats between, say, your smartphone and your
+        laptop, or back them up in the cloud, there are potentially more opportunities for the data to be exposed. Your
+        chats may be encrypted, but your backups may not.</br></br> Text: <a
+          href="https://www.wired.com/story/encrypted-messaging-isnt-magic/"
+          target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2018</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Meta</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Facebook Connect</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/research.html">Research</a></span><span class="tag"><a href="directory/socialmedia.html">Social Media</a></span></div>
-        <div class="expanding-element hidden">Facebook Connect, also called Log in with Facebook, is a set of authentication APIs from Facebook that developers can use to help their users connect and share with such users' Facebook friends (on and off Facebook) and increase engagement for their website or application. When so used, Facebook members can log on to third-party websites, applications, mobile devices and gaming systems with their Facebook identity and, while logged in, can connect with friends via these media and post information and updates to their Facebook profile. But sometimes, especially on lesser known websites, using Facebook's universal login feature may carry security risks, according to research from Princeton University. The tracking scripts documented by Steven Englehardt, Gunes Acar, and Arvind Narayanan represent a small slice of the invisible tracking ecosystem that follows users around the web largely without their knowledge. Facebook says the ability to scrape data through Facebook Connect has been patched. </br></br> Text: <a href="https://www.wired.com/story/security-risks-of-logging-in-with-facebook/" target="_blank">https://www.wired.com/story/security-risks-of-logging-in-with-facebook/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Meta</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Facebook Connect</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/research.html">Research</a></span><span class="tag"><a
+            href="directory/socialmedia.html">Social Media</a></span></div>
+      <div class="expanding-element hidden">Facebook Connect, also called Log in with Facebook, is a set of
+        authentication APIs from Facebook that developers can use to help their users connect and share with such users'
+        Facebook friends (on and off Facebook) and increase engagement for their website or application. When so used,
+        Facebook members can log on to third-party websites, applications, mobile devices and gaming systems with their
+        Facebook identity and, while logged in, can connect with friends via these media and post information and
+        updates to their Facebook profile. But sometimes, especially on lesser known websites, using Facebook's
+        universal login feature may carry security risks, according to research from Princeton University. The tracking
+        scripts documented by Steven Englehardt, Gunes Acar, and Arvind Narayanan represent a small slice of the
+        invisible tracking ecosystem that follows users around the web largely without their knowledge. Facebook says
+        the ability to scrape data through Facebook Connect has been patched. </br></br> Text: <a
+          href="https://www.wired.com/story/security-risks-of-logging-in-with-facebook/"
+          target="_blank">https://www.wired.com/story/security-risks-of-logging-in-with-facebook/</a></div>
     </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2016</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Snowflake</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/censorship.html">Censorship</a></span></div>
-        <div class="expanding-element hidden">Snowflake is a system that allows people from all over the world to access censored websites and applications. Similar to how VPNs assist users in getting around Internet censorship, Snowflake helps you avoid being noticed by Internet censors by making your Internet activity appear as though you're using the Internet for a regular video or voice call. [...] Snowflake is available inside Tor Browser on Desktop and Android, Onion Browser on iOS, and Orbot on Android and iOS. If you have downloaded and installed any of these apps, and they are censored in your country, you can bypass the censorship by activating Snowflake through the apps' settings page. [..] If you want to help people bypass censorship, consider installing and running a Snowflake proxy. The only prerequisite is that the Internet in your country is not heavily censored already.</br></br> Text: <a href="https://snowflake.torproject.org/?lang=en_US" target="_blank">https://snowflake.torproject.org/?lang=en_US</a></br>Run a proxy on Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/</a></br>Run a proxy on Chrome: <a href="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie" target="_blank">https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie</a></div>
-  </div>
-  
-  <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Snowflake</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/censorship.html">Censorship</a></span></div>
+      <div class="expanding-element hidden">Snowflake is a system that allows people from all over the world to access
+        censored websites and applications. Similar to how VPNs assist users in getting around Internet censorship,
+        Snowflake helps you avoid being noticed by Internet censors by making your Internet activity appear as though
+        you're using the Internet for a regular video or voice call. [...] Snowflake is available inside Tor Browser on
+        Desktop and Android, Onion Browser on iOS, and Orbot on Android and iOS. If you have downloaded and installed
+        any of these apps, and they are censored in your country, you can bypass the censorship by activating Snowflake
+        through the apps' settings page. [..] If you want to help people bypass censorship, consider installing and
+        running a Snowflake proxy. The only prerequisite is that the Internet in your country is not heavily censored
+        already.</br></br> Text: <a href="https://snowflake.torproject.org/?lang=en_US"
+          target="_blank">https://snowflake.torproject.org/?lang=en_US</a></br>Run a proxy on Firefox: <a
+          href="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/"
+          target="_blank">https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/</a></br>Run a proxy on
+        Chrome: <a href="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie"
+          target="_blank">https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie</a></div>
+    </div>
+
+    <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2016</div>
-        <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Privacy Badger</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/adblock.html">Adblock</a></span></div>
-        <div class="expanding-element hidden">Privacy Badger is a browser extension that stops advertisers and other third-party trackers from secretly tracking where you go and what pages you look at on the web. If an advertiser seems to be tracking you across multiple websites without your permission, Privacy Badger automatically blocks that advertiser from loading any more content in your browser. To the advertiser, it’s like you suddenly disappeared.</br></br> Text: <a href="https://privacybadger.org/#What-is-Privacy-Badger" target="_blank">https://privacybadger.org/#What-is-Privacy-Badger</a></br>Install on Firefox: <a href="https://www.eff.org/files/privacy-badger-latest.xpi" target="_blank">https://www.eff.org/files/privacy-badger-latest.xpi</a></br>Install on Chromium: <a href="https://www.eff.org/files/privacy_badger-chrome.crx" target="_blank">https://www.eff.org/files/privacy_badger-chrome.crx</a></div>
-  </div>
+      <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Privacy Badger</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/adblock.html">Adblock</a></span></div>
+      <div class="expanding-element hidden">Privacy Badger is a browser extension that stops advertisers and other
+        third-party trackers from secretly tracking where you go and what pages you look at on the web. If an advertiser
+        seems to be tracking you across multiple websites without your permission, Privacy Badger automatically blocks
+        that advertiser from loading any more content in your browser. To the advertiser, it’s like you suddenly
+        disappeared.</br></br> Text: <a href="https://privacybadger.org/#What-is-Privacy-Badger"
+          target="_blank">https://privacybadger.org/#What-is-Privacy-Badger</a></br>Install on Firefox: <a
+          href="https://www.eff.org/files/privacy-badger-latest.xpi"
+          target="_blank">https://www.eff.org/files/privacy-badger-latest.xpi</a></br>Install on Chromium: <a
+          href="https://www.eff.org/files/privacy_badger-chrome.crx"
+          target="_blank">https://www.eff.org/files/privacy_badger-chrome.crx</a></div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2014</div>
-        <div class="grid-item" onclick="toggleExpand(this)">New Vector</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Element Messenger</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></div>
-        <div class="expanding-element hidden">Element brings enterprise-grade functionality to the secure Matrix protocol. It offers the oversight and control you’d expect of a corporate application across an end-to-end encrypted environment that includes messaging, attachments, voice and video. Matrix has an exploding, vibrant ecosystem enabling you to benefit from both the openness of FOSS and the convenience of enterprise-ready solutions to help you unlock and secure your communications.</br></br> Text: <a href="https://element.io/matrix-benefits">https://element.io/matrix-benefits</a></br>Download: <a href="https://element.io/download" target="_blank">https://element.io/download</a></div>
-  </div>
+      <div class="grid-item" onclick="toggleExpand(this)">New Vector</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Element Messenger</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a
+            href="directory/messaging.html">Messaging</a></span></div>
+      <div class="expanding-element hidden">Element brings enterprise-grade functionality to the secure Matrix protocol.
+        It offers the oversight and control you’d expect of a corporate application across an end-to-end encrypted
+        environment that includes messaging, attachments, voice and video. Matrix has an exploding, vibrant ecosystem
+        enabling you to benefit from both the openness of FOSS and the convenience of enterprise-ready solutions to help
+        you unlock and secure your communications.</br></br> Text: <a
+          href="https://element.io/matrix-benefits">https://element.io/matrix-benefits</a></br>Download: <a
+          href="https://element.io/download" target="_blank">https://element.io/download</a></div>
+    </div>
 
-  <div class="grid-container">
-    <div class="grid-item" onclick="toggleExpand(this)">2009</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Tails OS</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Amnesic Incognito Live System</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">Tails is a portable operating system that protects against surveillance and censorship.</p><p><a href="https://tails.net/" target="_blank" rel="noopener noreferrer">https://tails.net/</a></div>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2009</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Tails OS</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Amnesic Incognito Live System</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span></div>
+      <div class="expanding-element hidden">Tails is a portable operating system that protects against surveillance and
+        censorship.</p>
+        <p><a href="https://tails.net/" target="_blank" rel="noopener noreferrer">https://tails.net/</a>
+      </div>
+    </div>
 
     <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2009</div>
       <div class="grid-item" onclick="toggleExpand(this)">W3C</div>
       <div class="grid-item" onclick="toggleExpand(this)">Do Not Track HTPP Header & Global Privacy Controls</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a>Adblock</a></span><span class="tag"><a href="directory/tools.html">Tools</a></div>
-      <div class="expanding-element hidden">Do Not Track (DNT) is a formerly official HTTP header field, designed to allow internet users to opt-out of tracking by websites—which includes the collection of data regarding a user's activity across multiple distinct contexts, and the retention, use, or sharing of data derived from that activity outside the context in which it occurred. The Do Not Track header was originally proposed in 2009. In 2020, a coalition of US-based internet companies announced the Global Privacy Control header that spiritually succeeds Do Not Track header. GPC is a valid do-not-sell-my-personal-information signal according to the California Consumer Privacy Act (CCPA), which stipulates that websites are legally required to respect a signal sent by users who want to opt-out of having their personal data sold. In July 2021, the California Attorney General clarified through an FAQ that under law, the Global Privacy Control signal must be honored.</br></br>Text: <a href="https://en.wikipedia.org/wiki/Do_Not_Track" target="_blank">https://en.wikipedia.org/wiki/Do_Not_Track</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a>Adblock</a></span><span class="tag"><a
+            href="directory/tools.html">Tools</a></div>
+      <div class="expanding-element hidden">Do Not Track (DNT) is a formerly official HTTP header field, designed to
+        allow internet users to opt-out of tracking by websites—which includes the collection of data regarding a user's
+        activity across multiple distinct contexts, and the retention, use, or sharing of data derived from that
+        activity outside the context in which it occurred. The Do Not Track header was originally proposed in 2009. In
+        2020, a coalition of US-based internet companies announced the Global Privacy Control header that spiritually
+        succeeds Do Not Track header. GPC is a valid do-not-sell-my-personal-information signal according to the
+        California Consumer Privacy Act (CCPA), which stipulates that websites are legally required to respect a signal
+        sent by users who want to opt-out of having their personal data sold. In July 2021, the California Attorney
+        General clarified through an FAQ that under law, the Global Privacy Control signal must be
+        honored.</br></br>Text: <a href="https://en.wikipedia.org/wiki/Do_Not_Track"
+          target="_blank">https://en.wikipedia.org/wiki/Do_Not_Track</a></div>
     </div>
-  
-  <div class="grid-container">
+
+    <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2009</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Amagicom</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Mullvad VPN</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">Tools</a></span><span class="tag"><a>VPN</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a href="directory/monero.html">Monero</a></span></div>
-        <div class="expanding-element hidden">We don’t ask for any personal info – not even your email – and we encourage anonymous payments with cash or cryptocurrency. Your privacy is your privacy which is why we don’t log your activity. Our long-term goal is to not even store payment details. We request independent audits of our app and infrastructure to provide transparency and improve our security practices.</br></br> Text: <a href="https://mullvad.net/en/why-mullvad-vpn" target="_blank">https://mullvad.net/en/why-mullvad-vpn</a></br>Download: <a href="https://mullvad.net/en/download/vpn/" target="_blank">https://mullvad.net/en/download/vpn/</a></div>
-  </div>
-  
-  <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">Amagicom</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Mullvad VPN</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">Tools</a></span><span class="tag"><a>VPN</a></span><span class="tag"><a
+            href="directory/bitcoin.html">Bitcoin</a></span><span class="tag"><a
+            href="directory/monero.html">Monero</a></span></div>
+      <div class="expanding-element hidden">We don’t ask for any personal info – not even your email – and we encourage
+        anonymous payments with cash or cryptocurrency. Your privacy is your privacy which is why we don’t log your
+        activity. Our long-term goal is to not even store payment details. We request independent audits of our app and
+        infrastructure to provide transparency and improve our security practices.</br></br> Text: <a
+          href="https://mullvad.net/en/why-mullvad-vpn"
+          target="_blank">https://mullvad.net/en/why-mullvad-vpn</a></br>Download: <a
+          href="https://mullvad.net/en/download/vpn/" target="_blank">https://mullvad.net/en/download/vpn/</a></div>
+    </div>
+
+    <div class="grid-container">
       <div class="grid-item" onclick="toggleExpand(this)">2002</div>
-        <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-        <div class="grid-item" onclick="toggleExpand(this)">The Onion Router</div>
-        <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/tools.html">tools</a></span><span class="tag"><a href="directory/browsing.html">Browsing</a></span><span class="tag"><a>ISPs</a></span><span class="tag"><a href="/directory/adblock.html">Adblock</a></span></div>
-        <div class="expanding-element hidden">The goal of onion routing was to have a way to use the internet with as much privacy as possible, and the idea was to route traffic through multiple servers and encrypt it each step of the way. This is still a simple explanation for how Tor works today. [...] Tor Browser prevents someone watching your connection from knowing what websites you visit. All anyone monitoring your browsing habits can see is that you're using Tor. Tor Browser isolates each website you visit so third-party trackers and ads can't follow you. Any cookies automatically clear when you're done browsing. So will your browsing history. Tor Browser aims to make all users look the same, making it difficult for you to be fingerprinted based on your browser and device information. Your traffic is relayed and encrypted three times as it passes over the Tor network. The network is comprised of thousands of volunteer-run servers known as Tor relays. With Tor Browser, you are free to access sites your home network may have blocked.</br></br> Text: <a href="https://www.torproject.org/" target="_blank">https://www.torproject.org/</a></br>Download: <a href="https://www.torproject.org/download/" target="_blank">https://www.torproject.org/download/</a></div>
+      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Onion Router</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/tools.html">tools</a></span><span class="tag"><a
+            href="directory/browsing.html">Browsing</a></span><span class="tag"><a>ISPs</a></span><span class="tag"><a
+            href="/directory/adblock.html">Adblock</a></span></div>
+      <div class="expanding-element hidden">The goal of onion routing was to have a way to use the internet with as much
+        privacy as possible, and the idea was to route traffic through multiple servers and encrypt it each step of the
+        way. This is still a simple explanation for how Tor works today. [...] Tor Browser prevents someone watching
+        your connection from knowing what websites you visit. All anyone monitoring your browsing habits can see is that
+        you're using Tor. Tor Browser isolates each website you visit so third-party trackers and ads can't follow you.
+        Any cookies automatically clear when you're done browsing. So will your browsing history. Tor Browser aims to
+        make all users look the same, making it difficult for you to be fingerprinted based on your browser and device
+        information. Your traffic is relayed and encrypted three times as it passes over the Tor network. The network is
+        comprised of thousands of volunteer-run servers known as Tor relays. With Tor Browser, you are free to access
+        sites your home network may have blocked.</br></br> Text: <a href="https://www.torproject.org/"
+          target="_blank">https://www.torproject.org/</a></br>Download: <a href="https://www.torproject.org/download/"
+          target="_blank">https://www.torproject.org/download/</a></div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2001</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Barry Brown</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Studying the Internet Experience</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases">Cases</a></span><span class="tag"><a
+            href="directory/research.html">Research</a></span><span class="tag"><a
+            href="directory/philosophy.html">Philosophy</a></div>
+      <div class="expanding-element hidden">In a number of areas – privacy, personalisation and community – there are
+        opportunities to improve user experience of the Internet. Users are often concerned about giving there personal
+        details over the internet because of problems related to privacy and misuse of information. These concerns go
+        beyond hacking and fraud and include the tracking of browsing habits and personal information without
+        individuals’ knowledge. In the US double -click ran into considerable bad publicity over their plans to misuse
+        their user data. Along with these problems, there are a number of new internet technologies with offer the
+        opportunity to improve the internet user experience. Two examples of this are new personalisation technology,
+        and new peer-to-peer sharing systems. New personalisation technologies offer the possibility of presenting
+        timely personalised information. By tracking individuals purchases and tastes it is possible that these systems
+        could begin to manage more of the internet user experience. This uncovered something of a “privacy paradox”
+        between users complaints regarding privacy.</br></br>Text: <a
+          href="https://www.hpl.hp.com/techreports/2001/HPL-2001-49.pdf"
+          target="_blank">https://www.hpl.hp.com/techreports/2001/HPL-2001-49.pdf</a></div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">2001</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Daniel J. Solove</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Myth of the Privacy Paradox</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases">Cases</a></span><span class="tag"><a
+            href="directory/research.html">Research</a></span><span class="tag"><a
+            href="directory/philosophy.html">Philosophy</a></div>
+      <div class="expanding-element hidden">The “privacy paradox” is the phenomenon where people say that they value
+        privacy highly, yet in their behavior relinquish their personal data for very little in exchange or fail to use
+        measures to protect their privacy. Managing one’s privacy is a vast, complex, and never-ending project that does
+        not scale; it becomes virtually impossible to do comprehensively. Privacy regulation often seeks to give people
+        more privacy self-management, such as the recent California Consumer Privacy Act. Professor Solove argues that
+        giving individuals more tasks for managing their privacy will not provide effective privacy protection. Instead,
+        regulation should employ a different strategy — focus on regulating the architecture that structures the way
+        information is used, maintained, and transferred.</br></br>Text: <a
+          href="https://scholarship.law.gwu.edu/faculty_publications/1482/"
+          target="_blank">https://scholarship.law.gwu.edu/faculty_publications/1482/</a></div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">1988</div>
+      <div class="grid-item" onclick="toggleExpand(this)">US Supreme Court</div>
+      <div class="grid-item" onclick="toggleExpand(this)">Video Privacy Protection Act</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/regulation.html">Regulation</a></span><span class="tag"><a
+            href="directory/lgbtq.html">LGBTQ+</a></span></div>
+      <div class="expanding-element hidden">The Video Privacy Protection Act of 1988 (codified at 18 U.S.C. § 2710
+        (2002)) was passed in reaction to the disclosure of Supreme Court nominee Robert Bork's video rental records in
+        a newspaper. The Act is not often invoked, but stands as one of the strongest protections of consumer privacy
+        against a specific form of data collection. Generally, it prevents disclosure of personally identifiable rental
+        records of "prerecorded video cassette tapes or similar audio visual material." The act was envoked in 2008 in a
+        class action law suit against Blockbuster Inc. over participation in Facebook's discontinued Beacon Program ,
+        which formed part of Facebook's advertisement system that sent data from external websites to Facebook for the
+        purpose of allowing targeted advertisements and allowing users to share their activities with their friends.
+        Beacon reported to Facebook on Facebook's members' activities on third-party sites that also participated with
+        Beacon even when users were not connected to Facebook, and happened without the knowledge of the Facebook user.
+        A similar lawsuit was brought against Netflix in 2009, when it disclosed insufficiently anonymous information
+        about nearly half-a-million customers as part of its $1 million contest to improve its recommendation system
+        leading to the alleged outing of a lesbian mother.</br></br> Text: <a
+          href="https://archive.epic.org/privacy/vppa/" target="_blank">https://archive.epic.org/privacy/vppa/</a></div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="toggleExpand(this)">1982</div>
+      <div class="grid-item" onclick="toggleExpand(this)">James Bamford</div>
+      <div class="grid-item" onclick="toggleExpand(this)">The Puzzle Palace</div>
+      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+            href="directory/books.html">Books</a></span><span class="tag"><a
+            href="directory/cases.html">Cases</a></span><span class="tag"><a
+            href="directory/spyware.html">Spyware</a></span></div>
+      <div class="expanding-element hidden">The Video Privacy Protection Act of 1988 (codified at 18 U.S.C. § 2710
+        (2002)) was passed in reaction to the disclosure of Supreme Court nominee Robert Bork's video rental records in
+        a newspaper. The Act is not often invoked, but stands as one of the strongest protections of consumer privacy
+        against a specific form of data collection. Generally, it prevents disclosure of personally identifiable rental
+        records of "prerecorded video cassette tapes or similar audio visual material." The act was envoked in 2008 in a
+        class action law suit against Blockbuster Inc. over participation in Facebook's discontinued Beacon Program ,
+        which formed part of Facebook's advertisement system that sent data from external websites to Facebook for the
+        purpose of allowing targeted advertisements and allowing users to share their activities with their friends.
+        Beacon reported to Facebook on Facebook's members' activities on third-party sites that also participated with
+        Beacon even when users were not connected to Facebook, and happened without the knowledge of the Facebook user.
+        A similar lawsuit was brought against Netflix in 2009, when it disclosed insufficiently anonymous information
+        about nearly half-a-million customers as part of its $1 million contest to improve its recommendation system
+        leading to the alleged outing of a lesbian mother.</br></br> Text: <a
+          href="https://archive.epic.org/privacy/vppa/" target="_blank">https://archive.epic.org/privacy/vppa/</a></div>
+    </div>
+
   </div>
 
-<div class="grid-container">
-  <div class="grid-item" onclick="toggleExpand(this)">2001</div>
-  <div class="grid-item" onclick="toggleExpand(this)">Barry Brown</div>
-  <div class="grid-item" onclick="toggleExpand(this)">Studying the Internet Experience</div>
-  <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases">Cases</a></span><span class="tag"><a href="directory/research.html">Research</a></span><span class="tag"><a href="directory/philosophy.html">Philosophy</a></div>
-  <div class="expanding-element hidden">In a number of areas – privacy, personalisation and community – there are opportunities to improve user experience of the Internet. Users are often concerned about giving there personal details over the internet because of problems related to privacy and misuse of information. These concerns go beyond hacking and fraud and include the tracking of browsing habits and personal information without individuals’ knowledge. In the US double -click ran into considerable bad publicity over their plans to misuse their user data. Along with these problems, there are a number of new internet technologies with offer the opportunity to improve the internet user experience. Two examples of this are new personalisation technology, and new peer-to-peer sharing systems. New personalisation technologies offer the possibility of presenting timely personalised information. By tracking individuals purchases and tastes it is possible that these systems could begin to manage more of the internet user experience. This uncovered something of a “privacy paradox” between users complaints regarding privacy.</br></br>Text: <a href="https://www.hpl.hp.com/techreports/2001/HPL-2001-49.pdf" target="_blank">https://www.hpl.hp.com/techreports/2001/HPL-2001-49.pdf</a></div>
-</div>
+  <div id="footer">
+    <div id="footnav-left">This website does not use cookies or other tracking services.</div>
+    <div id="footnav-right">Contact</br><a href="mailto:info@privacyindex.net">info@privacyindex.net</a></div>
+  </div>
+  <div id="footspace"></div>
+  <div id="footspacetwo"></div>
 
-<div class="grid-container">
-  <div class="grid-item" onclick="toggleExpand(this)">2001</div>
-  <div class="grid-item" onclick="toggleExpand(this)">Daniel J. Solove</div>
-  <div class="grid-item" onclick="toggleExpand(this)">The Myth of the Privacy Paradox</div>
-  <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases">Cases</a></span><span class="tag"><a href="directory/research.html">Research</a></span><span class="tag"><a href="directory/philosophy.html">Philosophy</a></div>
-  <div class="expanding-element hidden">The “privacy paradox” is the phenomenon where people say that they value privacy highly, yet in their behavior relinquish their personal data for very little in exchange or fail to use measures to protect their privacy. Managing one’s privacy is a vast, complex, and never-ending project that does not scale; it becomes virtually impossible to do comprehensively. Privacy regulation often seeks to give people more privacy self-management, such as the recent California Consumer Privacy Act. Professor Solove argues that giving individuals more tasks for managing their privacy will not provide effective privacy protection. Instead, regulation should employ a different strategy — focus on regulating the architecture that structures the way information is used, maintained, and transferred.</br></br>Text: <a href="https://scholarship.law.gwu.edu/faculty_publications/1482/" target="_blank">https://scholarship.law.gwu.edu/faculty_publications/1482/</a></div>
-</div>
+  <script>
 
-<div class="grid-container">
-  <div class="grid-item" onclick="toggleExpand(this)">1988</div>
-    <div class="grid-item" onclick="toggleExpand(this)">US Supreme Court</div>
-    <div class="grid-item" onclick="toggleExpand(this)">Video Privacy Protection Act</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/regulation.html">Regulation</a></span><span class="tag"><a href="directory/lgbtq.html">LGBTQ+</a></span></div>
-    <div class="expanding-element hidden">The Video Privacy Protection Act of 1988 (codified at 18 U.S.C. § 2710 (2002)) was passed in reaction to the disclosure of Supreme Court nominee Robert Bork's video rental records in a newspaper. The Act is not often invoked, but stands as one of the strongest protections of consumer privacy against a specific form of data collection. Generally, it prevents disclosure of personally identifiable rental records of "prerecorded video cassette tapes or similar audio visual material." The act was envoked in 2008 in a class action law suit against Blockbuster Inc. over participation in Facebook's discontinued Beacon Program , which formed part of Facebook's advertisement system that sent data from external websites to Facebook for the purpose of allowing targeted advertisements and allowing users to share their activities with their friends. Beacon reported to Facebook on Facebook's members' activities on third-party sites that also participated with Beacon even when users were not connected to Facebook, and happened without the knowledge of the Facebook user. A similar lawsuit was brought against Netflix in 2009, when it disclosed insufficiently anonymous information about nearly half-a-million customers as part of its $1 million contest to improve its recommendation system leading to the alleged outing of a lesbian mother.</br></br> Text: <a href="https://archive.epic.org/privacy/vppa/" target="_blank">https://archive.epic.org/privacy/vppa/</a></div>
-</div>
+    function toggleExpand(clickedItem) {
+      // Find the parent grid container of the clicked item
+      var container = clickedItem.closest('.grid-container');
 
-<div class="grid-container">
-  <div class="grid-item" onclick="toggleExpand(this)">1982</div>
-    <div class="grid-item" onclick="toggleExpand(this)">James Bamford</div>
-    <div class="grid-item" onclick="toggleExpand(this)">The Puzzle Palace</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/books.html">Books</a></span><span class="tag"><a href="directory/cases.html">Cases</a></span><span class="tag"><a href="directory/spyware.html">Spyware</a></span></div>
-    <div class="expanding-element hidden">The Video Privacy Protection Act of 1988 (codified at 18 U.S.C. § 2710 (2002)) was passed in reaction to the disclosure of Supreme Court nominee Robert Bork's video rental records in a newspaper. The Act is not often invoked, but stands as one of the strongest protections of consumer privacy against a specific form of data collection. Generally, it prevents disclosure of personally identifiable rental records of "prerecorded video cassette tapes or similar audio visual material." The act was envoked in 2008 in a class action law suit against Blockbuster Inc. over participation in Facebook's discontinued Beacon Program , which formed part of Facebook's advertisement system that sent data from external websites to Facebook for the purpose of allowing targeted advertisements and allowing users to share their activities with their friends. Beacon reported to Facebook on Facebook's members' activities on third-party sites that also participated with Beacon even when users were not connected to Facebook, and happened without the knowledge of the Facebook user. A similar lawsuit was brought against Netflix in 2009, when it disclosed insufficiently anonymous information about nearly half-a-million customers as part of its $1 million contest to improve its recommendation system leading to the alleged outing of a lesbian mother.</br></br> Text: <a href="https://archive.epic.org/privacy/vppa/" target="_blank">https://archive.epic.org/privacy/vppa/</a></div>
-</div>
+      // Find the expanding element within this container
+      var expandingElement = container.querySelector('.expanding-element');
 
-</div> 
+      if (expandingElement.classList.contains('hidden')) {
+        expandingElement.classList.remove('hidden');
+        expandingElement.style.display = 'block';
+      } else {
+        expandingElement.classList.add('hidden');
+        expandingElement.style.display = 'none';
+      }
+    }
 
-<div id="footer">
-  <div id="footnav-left">This website does not use cookies or other tracking services.</div>
-  <div id="footnav-right">Contact</br><a href="mailto:info@privacyindex.net">info@privacyindex.net</a></div>
-</div>
-<div id="footspace"></div>
-<div id="footspacetwo"></div>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      if (menu.style.opacity === "0" || menu.style.opacity === "") {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
+        nav.classList.add('menu-open');
+      } else {
+        menu.style.opacity = "0";
+        menu.style.pointerEvents = "none";
+        nav.classList.remove('menu-open');
+      }
+    }
+  </script>
 
-<script>
+  </html>
 
-function toggleExpand(clickedItem) {
-  // Find the parent grid container of the clicked item
-  var container = clickedItem.closest('.grid-container');
-  
-  // Find the expanding element within this container
-  var expandingElement = container.querySelector('.expanding-element');
-
-  if (expandingElement.classList.contains('hidden')) {
-    expandingElement.classList.remove('hidden');
-    expandingElement.style.display = 'block';
-  } else {
-    expandingElement.classList.add('hidden');
-    expandingElement.style.display = 'none';
-  }
-}
-
-function toggleMenu() {
-  var menu = document.getElementById('menu');
-  if (menu.style.opacity === "0" || menu.style.opacity === "") {
-    menu.style.opacity = "1";
-    menu.style.pointerEvents = "auto";
-  } else {
-    menu.style.opacity = "0";
-    menu.style.pointerEvents = "none";
-  }
-}
-    </script>
-
-</html>
+  </html>

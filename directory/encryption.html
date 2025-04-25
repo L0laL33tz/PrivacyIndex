@@ -1,118 +1,191 @@
 <!DOCTYPE html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../stylesheet.css">
-	<title>Privacy Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <title>Privacy Index</title>
 </head>
+
 <body>
-	<div id="nav">
-		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
-		</div>
-		
-		<div id="menu">
-		  <div id="ul">
-		  <h1><a href="../index.html">Home</a></h1>
-		  <h1><a href="directory/tools.html">Tools</a></h1>
-		  <h1><a href="../topics.html">Topics</a></h1>
-		  <h1><a href="../about.html">About</a></h1>
-		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
-		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
-		
-		  </div> 
-		</div>
+  <div id="nav">
+    <div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+  </div>
 
-<div id="hello"></div>
+  <div id="menu">
+    <div id="ul">
+      <h1><a href="../index.html">Home</a></h1>
+      <h1><a href="directory/tools.html">Tools</a></h1>
+      <h1><a href="../topics.html">Topics</a></h1>
+      <h1><a href="../about.html">About</a></h1>
+      <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+      <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
 
-<div class="marquee">
+    </div>
+  </div>
+
+  <div id="hello"></div>
+
+  <div class="marquee">
     <h3>Encryption</h3>
-</div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2022</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Onion Share</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="filesharing.html">Filesharing</a></span><span class="tag"><a href="peertopeer.html">Peer to Peer</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
-      <div class="expanding-element hidden">OnionShare is an open-source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.</br></br> Text: <a href="https://onionshare.org/">https://onionshare.org/</a></br>Download: <a href="https://onionshare.org/#download" target="_blank">https://onionshare.org/#download</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Onion Share</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="filesharing.html">Filesharing</a></span><span class="tag"><a href="peertopeer.html">Peer to
+          Peer</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
+    <div class="expanding-element hidden">OnionShare is an open-source tool that lets you securely and anonymously share
+      files, host websites, and chat with friends using the Tor network.</br></br> Text: <a
+        href="https://onionshare.org/">https://onionshare.org/</a></br>Download: <a
+        href="https://onionshare.org/#download" target="_blank">https://onionshare.org/#download</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2014</div>
-      <div class="grid-item" onclick="toggleExpand(this)">New Vector</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Element Messenger</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a>Messaging</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
-      <div class="expanding-element hidden">Element brings enterprise-grade functionality to the secure Matrix protocol. It offers the oversight and control you’d expect of a corporate application across an end-to-end encrypted environment that includes messaging, attachments, voice and video. Matrix has an exploding, vibrant ecosystem enabling you to benefit from both the openness of FOSS and the convenience of enterprise-ready solutions to help you unlock and secure your communications.</br></br> Text: <a href="https://element.io/matrix-benefits">https://element.io/matrix-benefits</a></br>Download: <a href="https://element.io/download" target="_blank">https://element.io/download</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">New Vector</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Element Messenger</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a>Messaging</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
+    <div class="expanding-element hidden">Element brings enterprise-grade functionality to the secure Matrix protocol.
+      It offers the oversight and control you’d expect of a corporate application across an end-to-end encrypted
+      environment that includes messaging, attachments, voice and video. Matrix has an exploding, vibrant ecosystem
+      enabling you to benefit from both the openness of FOSS and the convenience of enterprise-ready solutions to help
+      you unlock and secure your communications.</br></br> Text: <a
+        href="https://element.io/matrix-benefits">https://element.io/matrix-benefits</a></br>Download: <a
+        href="https://element.io/download" target="_blank">https://element.io/download</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2009</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Amagicom</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Mullvad VPN</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="vpn.html">VPN</a></span><span class="tag"><a href="encryption.html">Encryption</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="monero.html">Monero</a></span></div>
-      <div class="expanding-element hidden">We don’t ask for any personal info – not even your email – and we encourage anonymous payments with cash or cryptocurrency. Your privacy is your privacy which is why we don’t log your activity. Our long-term goal is to not even store payment details. We request independent audits of our app and infrastructure to provide transparency and improve our security practices.</br></br> Text: <a href="https://mullvad.net/en/why-mullvad-vpn" target="_blank">https://mullvad.net/en/why-mullvad-vpn</a></br>Download: <a href="https://mullvad.net/en/download/vpn/" target="_blank">https://mullvad.net/en/download/vpn/</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Amagicom</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Mullvad VPN</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="vpn.html">VPN</a></span><span class="tag"><a
+          href="encryption.html">Encryption</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span
+        class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="monero.html">Monero</a></span>
+    </div>
+    <div class="expanding-element hidden">We don’t ask for any personal info – not even your email – and we encourage
+      anonymous payments with cash or cryptocurrency. Your privacy is your privacy which is why we don’t log your
+      activity. Our long-term goal is to not even store payment details. We request independent audits of our app and
+      infrastructure to provide transparency and improve our security practices.</br></br> Text: <a
+        href="https://mullvad.net/en/why-mullvad-vpn"
+        target="_blank">https://mullvad.net/en/why-mullvad-vpn</a></br>Download: <a
+        href="https://mullvad.net/en/download/vpn/" target="_blank">https://mullvad.net/en/download/vpn/</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2022</div>
-      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
-      <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="vpn.html">VPN</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span class="tag"><a href="mobilephones.html">Mobile Phones</a></span><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="lightning.html">Lightning</a></span></div>
-      <div class="expanding-element hidden">With LNVPN we've build a very simple VPN pay-as-you-go service paid via Bitcoin Lightning. Instead of paying around 5$ every month with your credit card for the privilege of being able to use a VPN service every now and then we provide you with a VPN connection on servers in different countries for one hour for only 10 cents in US$ -- paid via ⚡! </br></br> Text: <a href="https://lnvpn.net/faq">https://lnvpn.net/faq</a></br>Get LNVPN: <a href="https://lnvpn.net/" target="_blank">https://lnvpn.net/</a></br>Get LNVPN phone numbers: <a href="https://lnvpn.net/phone-numbers" target="_blank">https://lnvpn.net/phone-numbers</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+    <div class="grid-item" onclick="toggleExpand(this)">LNVPN</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="vpn.html">VPN</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span
+        class="tag"><a href="mobilephones.html">Mobile Phones</a></span><span class="tag"><a
+          href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="lightning.html">Lightning</a></span></div>
+    <div class="expanding-element hidden">With LNVPN we've build a very simple VPN pay-as-you-go service paid via
+      Bitcoin Lightning. Instead of paying around 5$ every month with your credit card for the privilege of being able
+      to use a VPN service every now and then we provide you with a VPN connection on servers in different countries for
+      one hour for only 10 cents in US$ -- paid via ⚡! </br></br> Text: <a
+        href="https://lnvpn.net/faq">https://lnvpn.net/faq</a></br>Get LNVPN: <a href="https://lnvpn.net/"
+        target="_blank">https://lnvpn.net/</a></br>Get LNVPN phone numbers: <a href="https://lnvpn.net/phone-numbers"
+        target="_blank">https://lnvpn.net/phone-numbers</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2002</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-      <div class="grid-item" onclick="toggleExpand(this)">The Onion Router</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="browsing.html">Browsing</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span class="tag"><a href="adblock.html">Adblock</a></span></div>
-      <div class="expanding-element hidden">The goal of onion routing was to have a way to use the internet with as much privacy as possible, and the idea was to route traffic through multiple servers and encrypt it each step of the way. This is still a simple explanation for how Tor works today. [...] Tor Browser prevents someone watching your connection from knowing what websites you visit. All anyone monitoring your browsing habits can see is that you're using Tor. Tor Browser isolates each website you visit so third-party trackers and ads can't follow you. Any cookies automatically clear when you're done browsing. So will your browsing history. Tor Browser aims to make all users look the same, making it difficult for you to be fingerprinted based on your browser and device information. Your traffic is relayed and encrypted three times as it passes over the Tor network. The network is comprised of thousands of volunteer-run servers known as Tor relays. With Tor Browser, you are free to access sites your home network may have blocked.</br></br> Text: <a href="https://www.torproject.org/" target="_blank">https://www.torproject.org/</a></br>Download: <a href="https://www.torproject.org/download/" target="_blank">https://www.torproject.org/download/</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+    <div class="grid-item" onclick="toggleExpand(this)">The Onion Router</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="browsing.html">Browsing</a></span><span class="tag"><a href="isp.html">ISPs</a></span><span
+        class="tag"><a href="adblock.html">Adblock</a></span></div>
+    <div class="expanding-element hidden">The goal of onion routing was to have a way to use the internet with as much
+      privacy as possible, and the idea was to route traffic through multiple servers and encrypt it each step of the
+      way. This is still a simple explanation for how Tor works today. [...] Tor Browser prevents someone watching your
+      connection from knowing what websites you visit. All anyone monitoring your browsing habits can see is that you're
+      using Tor. Tor Browser isolates each website you visit so third-party trackers and ads can't follow you. Any
+      cookies automatically clear when you're done browsing. So will your browsing history. Tor Browser aims to make all
+      users look the same, making it difficult for you to be fingerprinted based on your browser and device information.
+      Your traffic is relayed and encrypted three times as it passes over the Tor network. The network is comprised of
+      thousands of volunteer-run servers known as Tor relays. With Tor Browser, you are free to access sites your home
+      network may have blocked.</br></br> Text: <a href="https://www.torproject.org/"
+        target="_blank">https://www.torproject.org/</a></br>Download: <a href="https://www.torproject.org/download/"
+        target="_blank">https://www.torproject.org/download/</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2016</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Snowflake</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span></div>
-      <div class="expanding-element hidden">Snowflake is a system that allows people from all over the world to access censored websites and applications. Similar to how VPNs assist users in getting around Internet censorship, Snowflake helps you avoid being noticed by Internet censors by making your Internet activity appear as though you're using the Internet for a regular video or voice call. [...] Snowflake is available inside Tor Browser on Desktop and Android, Onion Browser on iOS, and Orbot on Android and iOS. If you have downloaded and installed any of these apps, and they are censored in your country, you can bypass the censorship by activating Snowflake through the apps' settings page. [..] If you want to help people bypass censorship, consider installing and running a Snowflake proxy. The only prerequisite is that the Internet in your country is not heavily censored already.</br></br> Text: <a href="https://snowflake.torproject.org/?lang=en_US" target="_blank">https://snowflake.torproject.org/?lang=en_US</a></br>Run a proxy on Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/</a></br>Run a proxy on Chrome: <a href="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie" target="_blank">https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Tor Project</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Snowflake</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span></div>
+    <div class="expanding-element hidden">Snowflake is a system that allows people from all over the world to access
+      censored websites and applications. Similar to how VPNs assist users in getting around Internet censorship,
+      Snowflake helps you avoid being noticed by Internet censors by making your Internet activity appear as though
+      you're using the Internet for a regular video or voice call. [...] Snowflake is available inside Tor Browser on
+      Desktop and Android, Onion Browser on iOS, and Orbot on Android and iOS. If you have downloaded and installed any
+      of these apps, and they are censored in your country, you can bypass the censorship by activating Snowflake
+      through the apps' settings page. [..] If you want to help people bypass censorship, consider installing and
+      running a Snowflake proxy. The only prerequisite is that the Internet in your country is not heavily censored
+      already.</br></br> Text: <a href="https://snowflake.torproject.org/?lang=en_US"
+        target="_blank">https://snowflake.torproject.org/?lang=en_US</a></br>Run a proxy on Firefox: <a
+        href="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/"
+        target="_blank">https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/</a></br>Run a proxy on
+      Chrome: <a href="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie"
+        target="_blank">https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie</a></div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Amagicom, Tor Project</div>
-      <div class="grid-item" onclick="toggleExpand(this)">Mullvad Browser</div>
-      <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="adblock.html">Adblock</a></span><span class="tag"><a href="browsing.html">Browsing</a></span><span class="tag"><a href="encryption.html">Encryption</a></span></div>
-      <div class="expanding-element hidden">When you visit a website, you can be identified and tracked through your IP address, third-party cookies, all kinds of tracking scripts, and through so called browser fingerprints. That’s why masking your IP address is not enough to stop the data collection. However, by using a trustworthy VPN in combination with a privacy-focused browser, you can put up a better resistance against the mass surveillance of today. That's why we partnered with the Tor Project to develop Mullvad Browser – a browser designed to minimize tracking and fingerprints.</br></br> Text: <a href="https://mullvad.net/en/browser" target="_blank">https://mullvad.net/en/browser</a></br>Download: <a href="https://mullvad.net/en/download/browser/" target="_blank">https://mullvad.net/en/download/browser/</a></div>
-</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Amagicom, Tor Project</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Mullvad Browser</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="adblock.html">Adblock</a></span><span class="tag"><a
+          href="browsing.html">Browsing</a></span><span class="tag"><a href="encryption.html">Encryption</a></span>
+    </div>
+    <div class="expanding-element hidden">When you visit a website, you can be identified and tracked through your IP
+      address, third-party cookies, all kinds of tracking scripts, and through so called browser fingerprints. That’s
+      why masking your IP address is not enough to stop the data collection. However, by using a trustworthy VPN in
+      combination with a privacy-focused browser, you can put up a better resistance against the mass surveillance of
+      today. That's why we partnered with the Tor Project to develop Mullvad Browser – a browser designed to minimize
+      tracking and fingerprints.</br></br> Text: <a href="https://mullvad.net/en/browser"
+        target="_blank">https://mullvad.net/en/browser</a></br>Download: <a
+        href="https://mullvad.net/en/download/browser/" target="_blank">https://mullvad.net/en/download/browser/</a>
+    </div>
+  </div>
 
-    <script>
+  <script>
 
-        function toggleExpand(clickedItem) {
-          // Find the parent grid container of the clicked item
-          var container = clickedItem.closest('.grid-container');
-          
-          // Find the expanding element within this container
-          var expandingElement = container.querySelector('.expanding-element');
-        
-          if (expandingElement.classList.contains('hidden')) {
-            expandingElement.classList.remove('hidden');
-            expandingElement.style.display = 'block';
-          } else {
-            expandingElement.classList.add('hidden');
-            expandingElement.style.display = 'none';
-          }
-        }
-        
-        function toggleMenu() {
-          var menu = document.getElementById('menu');
-          if (menu.style.opacity === "0" || menu.style.opacity === "") {
-            menu.style.opacity = "1";
-            menu.style.pointerEvents = "auto";
-          } else {
-            menu.style.opacity = "0";
-            menu.style.pointerEvents = "none";
-          }
-        }
-            </script>
+    function toggleExpand(clickedItem) {
+      // Find the parent grid container of the clicked item
+      var container = clickedItem.closest('.grid-container');
+
+      // Find the expanding element within this container
+      var expandingElement = container.querySelector('.expanding-element');
+
+      if (expandingElement.classList.contains('hidden')) {
+        expandingElement.classList.remove('hidden');
+        expandingElement.style.display = 'block';
+      } else {
+        expandingElement.classList.add('hidden');
+        expandingElement.style.display = 'none';
+      }
+    }
+
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      if (menu.style.opacity === "0" || menu.style.opacity === "") {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
+        nav.classList.add('menu-open');
+      } else {
+        menu.style.opacity = "0";
+        menu.style.pointerEvents = "none";
+        nav.classList.remove('menu-open');
+      }
+    }
+  </script>
 </body>
 
 </html>

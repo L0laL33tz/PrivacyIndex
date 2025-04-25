@@ -1,185 +1,285 @@
 <!DOCTYPE html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../stylesheet.css">
-	<title>Privacy Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <title>Privacy Index</title>
 </head>
+
 <body>
-	<div id="nav">
-		<div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
-		</div>
-		
-		<div id="menu">
-		  <div id="ul">
-		  <h1><a href="../index.html">Home</a></h1>
-		  <h1><a href="tools.html">Tools</a></h1>
-		  <h1><a href="../topics.html">Topics</a></h1>
-		  <h1><a href="../about.html">About</a></h1>
-		  <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
-		  <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
-		
-		  </div> 
-		</div>
+  <div id="nav">
+    <div id="logo"><img src="../PrivacyIndex_logo.png" onclick="toggleMenu()"></div>
+  </div>
 
-<div id="hello"></div>
+  <div id="menu">
+    <div id="ul">
+      <h1><a href="../index.html">Home</a></h1>
+      <h1><a href="tools.html">Tools</a></h1>
+      <h1><a href="../topics.html">Topics</a></h1>
+      <h1><a href="../about.html">About</a></h1>
+      <h1><a href="mailto:info@privacyindex.net">Contact</a></h1>
+      <a href="https://github.com/L0laL33tz/PrivacyIndex" target="_blank"><img src="../github-mark.png"></a>
 
-<div class="marquee">
+    </div>
+  </div>
+
+  <div id="hello"></div>
+
+  <div class="marquee">
     <h3>Guides</h3>
-</div>
+  </div>
 
-<div class="grid-container">
-<div class="grid-item" onclick="toggleExpand(this)">2024</div>
-<div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
-<div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
-<div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/messaging.html">Messaging</a></span></span><span class="tag"><a href="directory/mobilephones.html">Mobile Phones</a></span></div>
-<div class="expanding-element hidden">A comparison of Messengers from a privacy perspective.</p><p><a href="https://privacyspreadsheet.com/messaging-apps" target="_blank" rel="noopener noreferrer">https://privacyspreadsheet.com/messaging-apps</a></div>
-</div>
+  <div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Messenger Privacy Spreadsheet</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+          href="directory/guides.html">Guides</a></span><span class="tag"><a
+          href="directory/messaging.html">Messaging</a></span></span><span class="tag"><a
+          href="directory/mobilephones.html">Mobile Phones</a></span></div>
+    <div class="expanding-element hidden">A comparison of Messengers from a privacy perspective.</p>
+      <p><a href="https://privacyspreadsheet.com/messaging-apps" target="_blank"
+          rel="noopener noreferrer">https://privacyspreadsheet.com/messaging-apps</a>
+    </div>
+  </div>
 
-<div class="grid-container">
-  <div class="grid-item" onclick="toggleExpand(this)">2024</div>
-  <div class="grid-item" onclick="toggleExpand(this)">Seth for Privacy</div>
-  <div class="grid-item" onclick="toggleExpand(this)">Setting Up Silent Payments & Bolt12 Usernames</div>
-  <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="directory/guides.html">Guides</a></span><span class="tag"><a href="directory/bitcoin.html">Bitcoin</a></span></div>
-  <div class="expanding-element hidden">A guide to setting up a Bitcoin username with Silent Payments & Bolt12 to improve your Bitcoin privacy.</p><p><a href="https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/" target="_blank" rel="noopener noreferrer">https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/</a></div>
-</div> 
+  <div class="grid-container">
+    <div class="grid-item" onclick="toggleExpand(this)">2024</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Seth for Privacy</div>
+    <div class="grid-item" onclick="toggleExpand(this)">Setting Up Silent Payments & Bolt12 Usernames</div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a
+          href="directory/guides.html">Guides</a></span><span class="tag"><a
+          href="directory/bitcoin.html">Bitcoin</a></span></div>
+    <div class="expanding-element hidden">A guide to setting up a Bitcoin username with Silent Payments & Bolt12 to
+      improve your Bitcoin privacy.</p>
+      <p><a href="https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/" target="_blank"
+          rel="noopener noreferrer">https://sethforprivacy.com/guides/setting-up-a-bitcoin-username/</a>
+    </div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">Yael Writes</div>
     <div class="grid-item" onclick="toggleExpand(this)">Big Ass Data Broker Opt-Out List</div>
     <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
-  </div> 
+    <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p>
+      <p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank"
+          rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a>
+    </div>
+  </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
     <div class="grid-item" onclick="toggleExpand(this)">VPN Overview</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="vpn.html">VPNs</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Using a VPN hides even this information from your ISP, by shifting the trust you place in your network to a server somewhere else in the world. As a result, the ISP then only sees that you are connected to a VPN and nothing about the activity that you're passing through it.</p><p><a href="https://www.privacyguides.org/en/basics/vpn-overview/" target="_blank" rel="noopener noreferrer">https://www.privacyguides.org/en/basics/vpn-overview/</a></div>
-  </div> 
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="vpn.html">VPNs</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">Using a VPN hides even this information from your ISP, by shifting the trust
+      you place in your network to a server somewhere else in the world. As a result, the ISP then only sees that you
+      are connected to a VPN and nothing about the activity that you're passing through it.</p>
+      <p><a href="https://www.privacyguides.org/en/basics/vpn-overview/" target="_blank"
+          rel="noopener noreferrer">https://www.privacyguides.org/en/basics/vpn-overview/</a>
+    </div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
     <div class="grid-item" onclick="toggleExpand(this)">Choosing The VPN That's Right For You</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="vpn.html">VPNs</a></span><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">There is no one-size-fits-all solution when it comes to VPNs. Just like email, there are many VPN services out there and you should choose the service that works best for you. Depending on which one you choose, you can benefit from an increased level of security when connected to networks you wouldn’t ordinarily trust. But this means you're placing your trust in the VPN.</p><p><a href="https://ssd.eff.org/module/choosing-vpn-thats-right-you" target="_blank" rel="noopener noreferrer">https://ssd.eff.org/module/choosing-vpn-thats-right-you</a></div>
-  </div> 
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="vpn.html">VPNs</a></span><span
+        class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">There is no one-size-fits-all solution when it comes to VPNs. Just like email,
+      there are many VPN services out there and you should choose the service that works best for you. Depending on
+      which one you choose, you can benefit from an increased level of security when connected to networks you wouldn’t
+      ordinarily trust. But this means you're placing your trust in the VPN.</p>
+      <p><a href="https://ssd.eff.org/module/choosing-vpn-thats-right-you" target="_blank"
+          rel="noopener noreferrer">https://ssd.eff.org/module/choosing-vpn-thats-right-you</a>
+    </div>
+  </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">Athena Alpha</div>
     <div class="grid-item" onclick="toggleExpand(this)">How To Buy Bitcoin On Bisq: Buy Bitcoin KYC Free</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="guides.html">Guides</a></span><span class="tag"><a href="tools.html">Tools</a></span></div>
-    <div class="expanding-element hidden">Buying Bitcoin is a top priority for most beginners, however doing so without having to bend at the knee of the all seeing KYC exchanges that force you to hand over all your private information is a huge concern for privacy and security reasons.</p><p><a href="https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/" target="_blank" rel="noopener noreferrer">https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span><span class="tag"><a href="tools.html">Tools</a></span></div>
+    <div class="expanding-element hidden">Buying Bitcoin is a top priority for most beginners, however doing so without
+      having to bend at the knee of the all seeing KYC exchanges that force you to hand over all your private
+      information is a huge concern for privacy and security reasons.</p>
+      <p><a href="https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/" target="_blank"
+          rel="noopener noreferrer">https://www.athena-alpha.com/how-to-buy-bitcoin-on-bisq/</a>
+    </div>
   </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">What Bitcoin Did</div>
     <div class="grid-item" onclick="toggleExpand(this)">The Bitcoin Scammer Uncensored</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span class="tag"><a href="guides.html">Guides</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
-    <div class="expanding-element hidden">“Everyone’s very afraid of being hacked, and, unless you understand the underlying security in all of your accounts, you’re going to have trouble not knowing whether these claims by a robocall are real.” </p><p><a href="https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored" target="_blank" rel="noopener noreferrer">https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="bitcoin.html">Bitcoin</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span><span class="tag"><a href="cases.html">Cases</a></span></div>
+    <div class="expanding-element hidden">“Everyone’s very afraid of being hacked, and, unless you understand the
+      underlying security in all of your accounts, you’re going to have trouble not knowing whether these claims by a
+      robocall are real.” </p>
+      <p><a href="https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored" target="_blank"
+          rel="noopener noreferrer">https://www.whatbitcoindid.com/podcast/the-bitcoin-scammer-uncensored</a>
+    </div>
   </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">Linus Tech Tips</div>
     <div class="grid-item" onclick="toggleExpand(this)">De-Googling Your Life</div>
     <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Google owns or has access to almost everything - search, email, even your web browser! Unless you like being the product, how can you opt out and still live a connected life?</p><p><a href="https://www.youtube.com/watch?v=YnSv8ylLfPw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=YnSv8ylLfPw</a></div>
+    <div class="expanding-element hidden">Google owns or has access to almost everything - search, email, even your web
+      browser! Unless you like being the product, how can you opt out and still live a connected life?</p>
+      <p><a href="https://www.youtube.com/watch?v=YnSv8ylLfPw" target="_blank"
+          rel="noopener noreferrer">https://www.youtube.com/watch?v=YnSv8ylLfPw</a>
+    </div>
   </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2024</div>
     <div class="grid-item" onclick="toggleExpand(this)">Intel Techniques</div>
     <div class="grid-item" onclick="toggleExpand(this)">Extreme Privacy: What It Takes To Disappear</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="guides.html">Guides</a></span><span class="tag"><a href="books.html">Books</a></span></div>
-    <div class="expanding-element hidden">This textbook is PROACTIVE. It is about starting over. It is the complete guide that he would give to any new client in an extreme situation. It leaves nothing out and provides explicit details of every step he takes to make someone completely disappear, including legal documents and a chronological order of events. The information shared in this book is based on real experiences with his actual clients, and is unlike any content ever released in his other books. The stories are all true, with the exception of changed names, locations, and minor details in order to protect the privacy of those described. For many, this is the only privacy manual needed to secure a new digital life.</p><p>Get the book here: <a href="https://inteltechniques.com/book7.html" target="_blank" rel="noopener noreferrer">https://inteltechniques.com/book7.html</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="guides.html">Guides</a></span><span
+        class="tag"><a href="books.html">Books</a></span></div>
+    <div class="expanding-element hidden">This textbook is PROACTIVE. It is about starting over. It is the complete
+      guide that he would give to any new client in an extreme situation. It leaves nothing out and provides explicit
+      details of every step he takes to make someone completely disappear, including legal documents and a chronological
+      order of events. The information shared in this book is based on real experiences with his actual clients, and is
+      unlike any content ever released in his other books. The stories are all true, with the exception of changed
+      names, locations, and minor details in order to protect the privacy of those described. For many, this is the only
+      privacy manual needed to secure a new digital life.</p>
+      <p>Get the book here: <a href="https://inteltechniques.com/book7.html" target="_blank"
+          rel="noopener noreferrer">https://inteltechniques.com/book7.html</a>
+    </div>
   </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">Privacy Guides</div>
     <div class="grid-item" onclick="toggleExpand(this)">Threat Modeling</div>
     <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Balancing security, privacy, and usability is one of the first and most difficult tasks you'll face on your privacy journey. Everything is a trade-off: The more secure something is, the more restricting or inconvenient it generally is, etc. Often, people find that the problem with the tools they see recommended is that they're just too hard to start using! </p><p>Read the guide: <a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank" rel="noopener noreferrer">https://www.privacyguides.org/en/basics/threat-modeling/</a></div>
+    <div class="expanding-element hidden">Balancing security, privacy, and usability is one of the first and most
+      difficult tasks you'll face on your privacy journey. Everything is a trade-off: The more secure something is, the
+      more restricting or inconvenient it generally is, etc. Often, people find that the problem with the tools they see
+      recommended is that they're just too hard to start using! </p>
+      <p>Read the guide: <a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank"
+          rel="noopener noreferrer">https://www.privacyguides.org/en/basics/threat-modeling/</a>
+    </div>
   </div>
 
-<div class="grid-container">
+  <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">EFF</div>
     <div class="grid-item" onclick="toggleExpand(this)">Surveillance Self Defense</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Surveillance Self-Defense is a digital security guide that teaches you how to assess your personal risk from online spying. It can help protect you from surveillance by those who might want to find out your secrets, from petty criminals to nation states. We offer guides to the best privacy-enhancing tools and explain how to incorporate protecting yourself against surveillance into your daily routine. This guide will teach you how to make a security plan for your digital information and how to determine what solutions are best for you.</br></br> Text: <a href="https://ssd.eff.org/" target="_blank">https://ssd.eff.org/</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">Surveillance Self-Defense is a digital security guide that teaches you how to
+      assess your personal risk from online spying. It can help protect you from surveillance by those who might want to
+      find out your secrets, from petty criminals to nation states. We offer guides to the best privacy-enhancing tools
+      and explain how to incorporate protecting yourself against surveillance into your daily routine. This guide will
+      teach you how to make a security plan for your digital information and how to determine what solutions are best
+      for you.</br></br> Text: <a href="https://ssd.eff.org/" target="_blank">https://ssd.eff.org/</a></div>
   </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
     <div class="grid-item" onclick="toggleExpand(this)">Opsec 101</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">This guide covers the basics of Opsec in a way that most anyone should be able to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient educational discussion. As this is intended for all audiences, it will be rich in easily destroyable strawmen examples that do not necessarily reflect complex realistic threats and risks.</p><p>This guide is not a "how to be anonymous on the internet", "how to protect yourself online", or "best practices" guide. Those are all countermeasure-first approaches that assume a threat model that applies to you (when it often doesn't). Instead, this guide teaches you how to understand that for yourself through the opsec process. While many guides can be useful to learn about potential threats and countermeasures, the countermeasure-first approach of the "best practices" fallacy has no place in opsec and ultimately leads to baseless paranoia. </p><p>Read the guide <a href="https://opsec101.org/" target="_blank" rel="noopener noreferrer">here.</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">This guide covers the basics of Opsec in a way that most anyone should be able
+      to understand. This guide is split up into topics designed to be linked to directly for the purpose of convenient
+      educational discussion. As this is intended for all audiences, it will be rich in easily destroyable strawmen
+      examples that do not necessarily reflect complex realistic threats and risks.</p>
+      <p>This guide is not a "how to be anonymous on the internet", "how to protect yourself online", or "best
+        practices" guide. Those are all countermeasure-first approaches that assume a threat model that applies to you
+        (when it often doesn't). Instead, this guide teaches you how to understand that for yourself through the opsec
+        process. While many guides can be useful to learn about potential threats and countermeasures, the
+        countermeasure-first approach of the "best practices" fallacy has no place in opsec and ultimately leads to
+        baseless paranoia. </p>
+      <p>Read the guide <a href="https://opsec101.org/" target="_blank" rel="noopener noreferrer">here.</a>
+    </div>
   </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2019</div>
     <div class="grid-item" onclick="toggleExpand(this)">Bitcoin Wiki</div>
     <div class="grid-item" onclick="toggleExpand(this)">Privacy Best Practices</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">While Bitcoin can support strong privacy, many ways of using it are usually not very private. With a proper understanding of the technology, bitcoin can indeed be used in a very private and anonymous way. As of 2019 most casual enthusiasts of bitcoin believe it is perfectly traceable; this is completely false. Around 2011 most casual enthusiasts believed it is totally private; which is also false. There is some nuance - in certain situations, bitcoin can be very private. But it is not simple to understand, and it takes some time and reading. </p><p>Read the full guide <a href="https://en.bitcoin.it/Privacy" target="_blank" rel="noopener noreferrer">here.</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">While Bitcoin can support strong privacy, many ways of using it are usually
+      not very private. With a proper understanding of the technology, bitcoin can indeed be used in a very private and
+      anonymous way. As of 2019 most casual enthusiasts of bitcoin believe it is perfectly traceable; this is completely
+      false. Around 2011 most casual enthusiasts believed it is totally private; which is also false. There is some
+      nuance - in certain situations, bitcoin can be very private. But it is not simple to understand, and it takes some
+      time and reading. </p>
+      <p>Read the full guide <a href="https://en.bitcoin.it/Privacy" target="_blank" rel="noopener noreferrer">here.</a>
+    </div>
   </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">Rachel Tobac</div>
     <div class="grid-item" onclick="toggleExpand(this)">Remove Yourself From Google</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guide.html">Guides</a></span></div>
-    <div class="expanding-element hidden">Google your name plus the words “phone number”, “email address”, or “address”. Do you see your sensitive personal info on data brokerage sites? 
-      Google has a tool to request a takedown of that info from Google itself (but doesn’t remove it from the other sites).
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="guide.html">Guides</a></span></div>
+    <div class="expanding-element hidden">Google your name plus the words “phone number”, “email address”, or “address”.
+      Do you see your sensitive personal info on data brokerage sites?
+      Google has a tool to request a takedown of that info from Google itself (but doesn’t remove it from the other
+      sites).
       Steps for Google removal request:
       - click the three vertical dots next to the Google results you want removed
       - click "remove result"
-      -  click “it shows my personal contact info”, following remaining steps.</br></br> Text: <a href="https://twitter.com/RachelTobac/status/1719781908291436800" target="_blank">https://twitter.com/RachelTobac/status/1719781908291436800</a></div>
+      - click “it shows my personal contact info”, following remaining steps.</br></br> Text: <a
+        href="https://twitter.com/RachelTobac/status/1719781908291436800"
+        target="_blank">https://twitter.com/RachelTobac/status/1719781908291436800</a></div>
   </div>
 
   <div class="grid-container">
     <div class="grid-item" onclick="toggleExpand(this)">2023</div>
     <div class="grid-item" onclick="toggleExpand(this)">Delete Me</div>
     <div class="grid-item" onclick="toggleExpand(this)">Delete Me</div>
-    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span class="tag"><a href="guides.html">Guides</a></span></div>
-    <div class="expanding-element hidden">DeleteMe is a tool to help you remove your personal information from data brokerage sites. The service is paid, but the site offers many diy-opt-out guides helpful to remove your data from online brokerage services.</br></br> See the Guides: <a href="https://joindeleteme.com/blog/opt-out-guides/" target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
+    <div class="grid-item" onclick="toggleExpand(this)"><span class="tag"><a href="tools.html">Tools</a></span><span
+        class="tag"><a href="guides.html">Guides</a></span></div>
+    <div class="expanding-element hidden">DeleteMe is a tool to help you remove your personal information from data
+      brokerage sites. The service is paid, but the site offers many diy-opt-out guides helpful to remove your data from
+      online brokerage services.</br></br> See the Guides: <a href="https://joindeleteme.com/blog/opt-out-guides/"
+        target="_blank">https://joindeleteme.com/blog/opt-out-guides/</a></div>
   </div>
 
-    <script>
-function toggleExpand(clickedItem) {
-  // Find the parent grid container of the clicked item
-  var container = clickedItem.closest('.grid-container');
-  
-  // Find the expanding element within this container
-  var expandingElement = container.querySelector('.expanding-element');
+  <script>
+    function toggleExpand(clickedItem) {
+      // Find the parent grid container of the clicked item
+      var container = clickedItem.closest('.grid-container');
 
-  if (expandingElement.classList.contains('hidden')) {
-    expandingElement.classList.remove('hidden');
-    expandingElement.style.display = 'block';
-  } else {
-    expandingElement.classList.add('hidden');
-    expandingElement.style.display = 'none';
-  }
-}
+      // Find the expanding element within this container
+      var expandingElement = container.querySelector('.expanding-element');
 
-function toggleMenu() {
-  var menu = document.getElementById('menu');
-  if (menu.style.opacity === "0" || menu.style.opacity === "") {
-    menu.style.opacity = "1";
-    menu.style.pointerEvents = "auto";
-  } else {
-    menu.style.opacity = "0";
-    menu.style.pointerEvents = "none";
-  }
-}
-    </script>
+      if (expandingElement.classList.contains('hidden')) {
+        expandingElement.classList.remove('hidden');
+        expandingElement.style.display = 'block';
+      } else {
+        expandingElement.classList.add('hidden');
+        expandingElement.style.display = 'none';
+      }
+    }
 
-</html>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      if (menu.style.opacity === "0" || menu.style.opacity === "") {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
+        nav.classList.add('menu-open');
+      } else {
+        menu.style.opacity = "0";
+        menu.style.pointerEvents = "none";
+        nav.classList.remove('menu-open');
+      }
+    }
+  </script>
+
+  </html>

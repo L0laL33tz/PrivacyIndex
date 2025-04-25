@@ -79,9 +79,20 @@ h3 {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+	background-color: #fff;
+	transition: background-color 0.5s ease-in-out;
+	padding-top: 10px;
+	top: 0;
+	left: 0;
+}
+
+#nav.menu-open {
+	background-color: #cadd47;
+	transition: background-color 0.5s ease-in-out;
 }
 
 #logo {
+	margin-top: 10px;
 	text-align: center;
 }
 
@@ -101,12 +112,13 @@ h3 {
 	opacity: 0;
 	pointer-events: none;
 	text-align: center;
-  }
+	z-index: 999;
+}
   
-  .menu-visible {
+.menu-visible {
 	opacity: 1;
 	pointer-events: auto;
-  }
+}
 
 #ul {
 	padding-top: 125px;
@@ -148,7 +160,7 @@ input[type="submit"] {
 #hello {
 	text-align: center;
 	margin: auto;
-	padding-top: 150px;
+	padding-top: 120px;
 }
 
 #list {
